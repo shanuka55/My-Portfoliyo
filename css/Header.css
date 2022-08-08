@@ -3,7 +3,66 @@
     margin: 0;
 }
 .header{
-    min-height: 100vh;
+    background-image: url(/assets/home.jpg);
     width: 100%;
-    background: url("/assets/main.jpg");
+    height: 100%;
+    /*position: relative;*/
+    flex-basis: 32%;
 }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navBar ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px 12px;
+    position: relative;
+
+}
+
+
+/*.nav{*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 1000%;*/
+/*    height: 100px;*/
+/*    padding: 10px 90px;*/
+/*    box-sizing: border-box;*/
+/*    background: rgba(0,0,0,0.6);*/
+/*    border-bottom: 1px solid #fff;*/
+/*}*/
+.logo{
+    padding: 22px 50px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/*.navBar{*/
+/*    list-style: none;*/
+/*    float: right;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    display: flex;*/
+/*}*/
+/*.navBar li{*/
+/*    line-height: 80px;*/
+/*    color: #fff;*/
+/*    padding: 12px 30px;*/
+/*    text-decoration: none;*/
+/*    font-size: 14px;*/
+/*    font-weight: bold;*/
+/*    text-transform: uppercase;*/
+/*}*/
+/*.navBar li:hover{*/
+/*    background: rgba(0,0,0,0.7);*/
+/*    border-radius: 6px;*/
+/*}*/
+
+
