@@ -7,7 +7,7 @@
     <meta content="width=device-width initial-scale=1" name="viewport">
 
     <style>
-        main>div:first-of-type{
+        main>section:nth-child(1)>div:first-of-type{
             width: 250px;
             height: 250px;
             position: fixed;
@@ -20,12 +20,12 @@
             margin: auto;
             z-index: 1;
         }
-        main>div>div{
+        main>section:nth-child(1)>div:first-of-type>div{
             width: 220px;
             height: 220px;
             position: fixed;
             border-radius: 100%;
-            border: 20px solid dimgrey;
+            border: 20px solid red;
             top: 0;
             bottom: 0;
             left: 0;
@@ -33,18 +33,84 @@
             margin: auto;
             z-index: 1;
         }
+        main>section{
+            width: 100vw;
+            height: 100vh;
+
+        }
+        main>section:first-child{
+            position: absolute;
+        }
+        main>section:nth-child(2){
+            position: absolute;
+            top: 100vh;
+        }
+        main>section:last-child{
+            position: absolute;
+            top: 200vh;
+        }
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+        main>section:nth-child(1)>div:nth-child(2){
+            width: 220px;
+            height: 220px;
+            position: absolute;
+            border-radius: 100%;
+            background-color: #24327f;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        main>section:nth-child(2)>div{
+            width: 220px;
+            height: 220px;
+            position: absolute;
+            border-radius: 100%;
+            background-color: purple;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        main>section:nth-child(3)>div{
+            width: 220px;
+            height: 220px;
+            position: absolute;
+            border-radius: 100%;
+            background-color: lightpink;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
     </style>
 </head>
 <body>
 <main>
-    <div>
-        <div>
+<!--    <div>-->
+<!--        <div>-->
 
+<!--        </div>-->
+<!--    </div>-->
+    <section>
+        <div>
+            <div>
+
+            </div>
         </div>
-    </div>
-    <section></section>
-    <section></section>
-    <section></section>
+        <div></div>
+    </section>
+    <section>
+        <div></div>
+    </section>
+    <section>
+        <DIV></DIV>
+    </section>
 </main>
 </body>
 </html>
