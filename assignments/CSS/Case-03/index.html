@@ -10,7 +10,7 @@
         main>div:first-of-type{
             width: 250px;
             height: 250px;
-            position: absolute;
+            position: fixed;
             border-radius: 100%;
             border: 20px solid dimgrey;
             top: 0;
@@ -18,7 +18,20 @@
             left: 0;
             right: 0;
             margin: auto;
-
+            z-index: 1;
+        }
+        main>div>div{
+            width: 220px;
+            height: 220px;
+            position: fixed;
+            border-radius: 100%;
+            border: 20px solid dimgrey;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 1;
         }
     </style>
 </head>
