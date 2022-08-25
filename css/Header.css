@@ -2,17 +2,27 @@
     padding: 0;
     margin: 0;
 }
-.header{
+header{
     background-image: url(/assets/home.jpg);
     width: 100%;
     height: 100%;
-    /*position: relative;*/
+    position: relative;
     flex-basis: 32%;
 }
-nav{
+header>div:first-child>nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+header> nav:first-child>ul>li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(46, 41, 41, 0.96);
+    font-size: 19px;
+    border-right: 2px solid rgba(46, 41, 41, 0.58);
+
 }
 .navBar ul li {
     display: inline-block;
