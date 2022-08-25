@@ -13,15 +13,103 @@
             font-family: 'DynaPuff', cursive;
         }
 
+        main>section{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        main>section:nth-child(1){
+            background-color: white;
+        }
+        main>section:nth-child(2){
+            background-color: #00c7c1;
+        }
+        main>section:nth-child(3){
+            background-color: #363030;
+        }
+        main>section:nth-child(4){
+            background-color: red;
+        }
+
+        main>section:nth-child(1)>nav{
+            width: 100vw;
+            height: 50px;
+            position: sticky;
+            top: 0;
+            background-color: red;
+        }
+        main>section:nth-child(2)>nav{
+            width: 100vw;
+            height: 50px;
+            position: sticky;
+            top: 0;
+            background-color: blue;
+        }
+        main>section:nth-child(3)>nav{
+            width: 100vw;
+            height: 50px;
+            position: sticky;
+            top: 0;
+            background-color: #905633;
+        }
+        main>section:nth-child(4)>nav{
+            width: 100vw;
+            height: 50px;
+            position: sticky;
+            top: 0;
+            background-color: #1d1611;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+        main>section>nav>h1{
+            margin: 0;
+            border: 0;
+            color: white;
+        }
+        main>section>div{
+            width: fit-content;
+            height: fit-content;
+            margin-top: 40vh;
+            margin-left: 40vw;
+            position: absolute;
+        }
+        main<section>div>p{
+
+        }
 
     </style>
 </head>
 <body>
 <main>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
+    <section>
+        <nav>
+            <h1>Case 01</h1>
+        </nav>
+        <div><p>Hellow</p></div>
+    </section>
+
+    <section>
+        <nav>
+            <h1>Case 02</h1>
+        </nav>
+        <div><p>How</p></div>
+    </section>
+
+    <section>
+        <nav>
+            <h1>Case 03</h1>
+        </nav>
+        <div><p>Are</p></div>
+    </section>
+
+    <section>
+        <nav>
+            <h1>Case 04</h1>
+        </nav>
+        <div><p>You..?</p></div>
+    </section>
 </main>
 
 </body>
