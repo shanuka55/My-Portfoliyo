@@ -1,0 +1,82 @@
+/*scoleBar*/
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #232323;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #232323;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(66, 65, 65, 0.85);
+}
+
+header>video{
+    left: 0;
+    width: 99.1vw;
+    /*height: 100vh;*/
+    top: 0;
+    z-index: -1;
+    position: absolute;
+}
+
+
+header>div:nth-child(3){
+    width: 99.1vw;
+    height: 75px;
+    /*background-color: rgba(255,255,255,0.68);*/
+    position: fixed;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+}
+header>div:nth-child(3)>nav>ul>li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+
+}
+header>div:nth-child(3)>nav{
+    position: absolute;
+    right: 40px;
+    top: 0;
+}
+
+header>div:nth-child(3)>nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+header>div:nth-child(3)>p{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+#de{
+    color: yellow;
+}
+header>div:nth-child(2){
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 600px;
+    height: 855px;
+    /*border: 1px solid red;*/
+    position: absolute;
+    background-image: url("../assets/03 .jpg");
+    background-size: cover;
+}
+
+
