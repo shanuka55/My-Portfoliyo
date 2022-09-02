@@ -1,0 +1,17 @@
+.AboutMe{
+    width: 99.1vw;
+    height: 100vh;
+    position: absolute;
+    top: 117vh;
+}
+
+.AboutMe>h1{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin: auto;
+}

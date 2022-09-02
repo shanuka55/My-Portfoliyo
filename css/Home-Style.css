@@ -26,6 +26,7 @@ header>video{
     top: 0;
     z-index: -1;
     position: absolute;
+
 }
 
 
@@ -33,11 +34,13 @@ header>div:nth-child(3){
     width: 99.1vw;
     height: 75px;
     /*background-color: rgba(255,255,255,0.68);*/
+    background-color: #02070e;
     position: fixed;
     background-position: center;
     justify-content: center;
     align-items: center;
     z-index: 1;
+    top: 0;
 
 }
 header>div:nth-child(3)>nav>ul>li{
@@ -77,6 +80,7 @@ header>div:nth-child(2){
     position: absolute;
     background-image: url("../assets/03 .jpg");
     background-size: cover;
+    background-color: #131347;
 }
 header>div:nth-child(4){
     position: absolute;
