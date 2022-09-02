@@ -78,5 +78,26 @@ header>div:nth-child(2){
     background-image: url("../assets/03 .jpg");
     background-size: cover;
 }
+header>div:nth-child(4){
+    position: absolute;
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+header>div:nth-child(4)>p:nth-child(1){
+    font-size: 30px;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+header>div:nth-child(4)>p:nth-child(2){
+    font-size: 70px;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
 
 
