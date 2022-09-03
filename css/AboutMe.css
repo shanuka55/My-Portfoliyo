@@ -3,6 +3,7 @@
     height: 100vh;
     position: absolute;
     top: 117vh;
+    background-color: #11141b !important;
 }
 
 .AboutMe>h1{
@@ -14,4 +15,7 @@
     right: 0;
     top: 20px;
     margin: auto;
+}
+.AboutMe>div:nth-child(1){
+    background-image: url("");
 }

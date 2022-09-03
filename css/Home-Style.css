@@ -96,7 +96,8 @@ header>div:nth-child(4){
 header>div:nth-child(4)>p:nth-child(1){
     font-size: 30px;
     margin: 0;
-    font-family: 'Rubik', sans-serif;
+    /*font-family: 'Rubik', sans-serif;*/
+    font-family: 'Baloo 2', cursive;
 }
 header>div:nth-child(4)>p:nth-child(2){
     font-size: 70px;
@@ -171,4 +172,48 @@ header>div:nth-child(5)>ul>li{
     border: 3px solid #f44336;
     background: #f44336;
     transition: 1s;
+}
+
+.wrapper li{
+    color: #fff;
+}
+.hover-fx{
+    font-size: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    margin: 15px;
+    width: 80px;
+    height: 80px;
+    line-height: 84px;
+    border-radius: 0;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 300ms;
+
+}
+.hover-fx:after{
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+    box-shadow: 0 0 0 3px #fff;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.hover-fx:hover{
+    background-color: #fff;
+    color: #151515;
+
+}
+.hover-fx:hover:after{
+    opacity: 1;
+    transition:  scale(1.15);
 }
