@@ -95,9 +95,10 @@ header>div:nth-child(4){
 }
 header>div:nth-child(4)>p:nth-child(1){
     font-size: 30px;
-    margin: 0;
+    margin-bottom: 0;
     /*font-family: 'Rubik', sans-serif;*/
     font-family: 'Baloo 2', cursive;
+    margin-left: 180px;
 }
 header>div:nth-child(4)>p:nth-child(2){
     font-size: 70px;

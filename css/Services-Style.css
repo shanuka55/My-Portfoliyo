@@ -1,0 +1,18 @@
+.MyServices{
+    width: 99.1vw;
+    height: 85vh;
+    position: absolute;
+    top: 214vh;
+    background-color: #0c0f16 !important;
+}
+.MyServices>h1{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin: auto;
+    font-size: 50px;
+}
