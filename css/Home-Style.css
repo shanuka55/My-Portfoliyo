@@ -185,7 +185,7 @@ header>div:nth-child(5)>ul>li{
     width: 80px;
     height: 80px;
     line-height: 84px;
-    border-radius: 0;
+    border-radius: 50%;
     text-align: center;
     position: relative;
     color: #fff;
@@ -206,14 +206,24 @@ header>div:nth-child(5)>ul>li{
     left: 0;
     opacity: 0;
     transition: 300ms;
+
 }
 
 .hover-fx:hover{
     background-color: #fff;
+    /*background-color: #803d0e;*/
     color: #151515;
+    bottom: 10px;
+    border-radius: 50%;
 
 }
 .hover-fx:hover:after{
     opacity: 1;
-    transition:  scale(1.15);
+    /*transition:  scale(1.15);*/
+    transition: steps(1.15);
+}
+.wrapper>i{
+    margin-top: 70px;
+    top: 0;
+    bottom: 0;
 }
