@@ -16,20 +16,23 @@
     margin: auto;
     font-size: 50px;
 }
-.MyServices>article:nth-child(2){
-    border: 2px solid red;
-    width: 400px;
-    height: 400px;
-    left: 60px;
+.MyServices>div{
+    width: 350px;
+    height: 350px;
+    cursor: pointer;
+    background-color: #11141b;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.89);
+
+}
+.MyServices>div:nth-child(2){
+    left: 150px;
     top: 50px;
     bottom: 0;
     margin: auto;
     position: absolute;
 }
-.MyServices>article:nth-child(3){
-    border: 2px solid red;
-    width: 400px;
-    height: 400px;
+.MyServices>div:nth-child(3){
+
     bottom: 0;
     top: 50px;
     left: 0;
@@ -38,14 +41,51 @@
     position: absolute;
 
 }
-.MyServices>article:nth-child(4){
-    border: 2px solid red;
-    width: 400px;
-    height: 400px;
+.MyServices>div:nth-child(4){
+
     bottom: 0;
     top: 50px;
-    left: 1000px;
+    left: 880px;
     right: 0;
     margin: auto;
     position: absolute;
+}
+.MyServices>div>p{
+    font-size: 30px;
+    color: white;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+
+}
+.MyServices>div>div{
+
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 50px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: #212529;
+
+}
+.MyServices>div>div>i{
+    width: fit-content;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    position: absolute;
+    font-size: 45px;
+    color: orangered;
 }
