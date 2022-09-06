@@ -118,4 +118,15 @@
 
 }
 
+.MySkills>section:nth-child(3)>div>p{
+    font-size: 25px;
+    bottom: 5px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+
+}
 
