@@ -111,14 +111,14 @@
     background-color: #212529;
 }
 
-.MySkills>section:nth-child(3)>div>img{
+.MySkills>section:nth-child(3)>div>img,.MySkills>section:nth-child(5)>div>img{
     width: 60%;
     height: 70%;
     margin-left: 40px;
 
 }
 
-.MySkills>section:nth-child(3)>div>p{
+.MySkills>section:nth-child(3)>div>p,.MySkills>section:nth-child(5)>div>p{
     font-size: 25px;
     bottom: 5px;
     margin: auto;
