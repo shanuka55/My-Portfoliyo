@@ -43,9 +43,10 @@
 .MySkills>section:nth-child(3)>div{
     width: 100%;
     height: 100%;
-
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.89);
     background-color: #212529;
+    background-position: center;
+    background-size: cover;
 }
 /*tools*/
 .MySkills>div:nth-child(4){
@@ -74,7 +75,6 @@
 .MySkills>section:nth-child(5)>div{
     width: 100%;
     height: 100%;
-
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.89);
     background-color: #212529;
 }
@@ -109,6 +109,13 @@
 
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.89);
     background-color: #212529;
+}
+
+.MySkills>section:nth-child(3)>div>img{
+    width: 60%;
+    height: 70%;
+    margin-left: 40px;
+
 }
 
 
