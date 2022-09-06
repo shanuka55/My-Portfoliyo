@@ -18,7 +18,7 @@
 }
 .Education>section{
     /*border: 2px solid red;*/
-    width: 1000px;
+    width: 1200px;
     height: 400px;
     top: 0;
     left: 0;
@@ -34,4 +34,48 @@
     height: 100%;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.89);
     background-color: #0c0f16;
+}
+.Education>section>div>div:first-of-type{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color:  orangered;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+.Education>section>div>div:nth-child(2){
+    width: 8px;
+    height: 100px;
+    background-color: orangered;
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-bottom: 0;
+}
+.Education>section>div>div:nth-child(3){
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color:  orangered;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+.Education>section>div>div:nth-child(4){
+    width: 8px;
+    height: 100px;
+    background-color: orangered;
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-bottom: 0;
+}
+
+.Education>section>div>div:nth-child(5){
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid red;
+    margin-top: -300px;
+    /*margin-bottom: 80px;*/
+    margin-left: 70px;
 }
