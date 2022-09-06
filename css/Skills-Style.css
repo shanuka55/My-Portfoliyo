@@ -112,9 +112,10 @@
 }
 
 .MySkills>section:nth-child(3)>div>img,.MySkills>section:nth-child(5)>div>img{
-    width: 60%;
-    height: 70%;
-    margin-left: 40px;
+    width: 50%;
+    height: 60%;
+    margin-left: 50px;
+    margin-top: 7px;
 
 }
 
