@@ -16,3 +16,36 @@
     margin: auto;
     font-size: 50px;
 }
+.MyServices>article:nth-child(2){
+    border: 2px solid red;
+    width: 400px;
+    height: 400px;
+    left: 60px;
+    top: 50px;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+}
+.MyServices>article:nth-child(3){
+    border: 2px solid red;
+    width: 400px;
+    height: 400px;
+    bottom: 0;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+
+}
+.MyServices>article:nth-child(4){
+    border: 2px solid red;
+    width: 400px;
+    height: 400px;
+    bottom: 0;
+    top: 50px;
+    left: 1000px;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}

@@ -51,7 +51,8 @@
     color: white;
     margin-top: 150px;
     margin-bottom: 9px;
-
+    /*font-family: 'Acme', sans-serif;*/
+    font-family: 'Kaushan Script', cursive;
 }
 .Name{
     color: yellow;
