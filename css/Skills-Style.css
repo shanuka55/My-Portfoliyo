@@ -27,6 +27,7 @@
     width: fit-content;
     height: fit-content;
     font-size: 25px;
+    cursor: pointer;
 }
 .MySkills>section:nth-child(3){
 
@@ -111,7 +112,7 @@
     background-color: #212529;
 }
 
-.MySkills>section:nth-child(3)>div>img,.MySkills>section:nth-child(5)>div>img{
+.MySkills>section:nth-child(3)>div>img,.MySkills>section:nth-child(5)>div>img,.MySkills>section:nth-child(7)>div>img{
     width: 50%;
     height: 60%;
     margin-left: 50px;
@@ -119,7 +120,7 @@
 
 }
 
-.MySkills>section:nth-child(3)>div>p,.MySkills>section:nth-child(5)>div>p{
+.MySkills>section:nth-child(3)>div>p,.MySkills>section:nth-child(5)>div>p,.MySkills>section:nth-child(7)>div>p{
     font-size: 25px;
     bottom: 5px;
     margin: auto;
@@ -130,9 +131,9 @@
     height: fit-content;
 
 }
-.MySkills>section:nth-child(6)>div:nth-child(2){
-    width: 50%;
-    height: 50%;
-    margin-left: 5px;
-    margin-top: 7px;
+.MySkills>section:nth-child(7)>div{
+
+}
+.MySkills>section:nth-child(7)>i{
+
 }
