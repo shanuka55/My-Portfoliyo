@@ -79,6 +79,8 @@
     /*margin-bottom: 80px;*/
     margin-left: 70px;
     background-color: white;
+    background-position: center;
+    background-size: cover;
 }
 .Education>section>div>div:nth-child(6){
     width: 100px;
@@ -89,4 +91,39 @@
     /*margin-bottom: 80px;*/
     margin-left: 70px;
     background-color: white;
+    background-position: center;
+    background-size: cover;
+}
+.Education>section>div:nth-child(1)>div:nth-child(5)>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.Education>section>div:nth-child(1)>div:nth-child(6)>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.Education>section>div:nth-child(2)>div:nth-child(5)>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.Education>section>div:nth-child(2)>div:nth-child(6)>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.Education>section>div>p:nth-child(7){
+    margin-left: 200px;
+    margin-top: -260px ;
+    font-size: 25px;
+    color: white;
+}
+
+.Education>section>div>p:nth-child(8){
+    margin-left: 200px;
+    margin-top: 110px ;
+    font-size: 25px;
+    color: white;
 }
