@@ -59,6 +59,7 @@
     right: 0;
     margin: auto;
     z-index: 1;
+    opacity: 68%;
 }
 
 .my-works>div:nth-child(2) {
