@@ -7,7 +7,7 @@
     background-position: center;
     background-size: cover;
 }
-.Contact>section>h1{
+.Contact>h1{
     position: absolute;
     width: fit-content;
     height: fit-content;
@@ -20,6 +20,15 @@
 }
 .Contact>section{
 
+    width: 1400px;
+    height: 150px;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    display: flex;
+    gap: 0px;
 }
 .Contact>section>div{
     border: 2px solid red;
@@ -30,7 +39,6 @@
     right: 0;
     margin: auto;
     display:flex ;
-
-
+    background-color: #090d15;
 
 }
