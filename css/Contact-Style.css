@@ -4,8 +4,10 @@
     top: 644vh;
     background-color: #11141b;
     position: absolute;
+    background-position: center;
+    background-size: cover;
 }
-.Contact>h1{
+.Contact>section>h1{
     position: absolute;
     width: fit-content;
     height: fit-content;
@@ -16,8 +18,19 @@
     margin: auto;
     font-size: 50px;
 }
-.Contact>div:nth-child(2){
-    width: 50px;
-    height: 50px;
+.Contact>section{
+
+}
+.Contact>section>div{
+    border: 2px solid red;
+    width: 400px;
+    height: 150px;
+    top: 650px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display:flex ;
+
+
 
 }
