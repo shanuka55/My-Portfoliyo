@@ -30,8 +30,8 @@
     position: absolute;
     width: 300px;
     height: 100px;
-    left: 5%;
-    top: 25%;
+    left: 10%;
+    top: 40%;
 }
 
 .Contact>#con-div-one>h1{
@@ -50,6 +50,58 @@
     top: 45%;
     left: 10%;
 /*    font-size: 40px;*/
+}
+
+.Contact>#con-div-two{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 45%;
+    top: 40%;
+}
+
+.Contact>#con-div-two>h1{
+    position: absolute;
+    left: 0;
+    margin: 0;
+    color: white;
+    font-size: 40px;
+}
+
+.Contact>#con-div-two>h3{
+    position: absolute;
+    left: 0;
+    margin: 0;
+    color: white;
+    top: 45%;
+    left: 15%;
+    /*    font-size: 40px;*/
+}
+
+.Contact>#con-div-three{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 75%;
+    top: 40%;
+}
+
+.Contact>#con-div-three>h1{
+    position: absolute;
+    left: 0;
+    margin: 0;
+    color: white;
+    font-size: 40px;
+}
+
+.Contact>#con-div-three>h3{
+    position: absolute;
+    left: 0;
+    margin: 0;
+    color: white;
+    top: 45%;
+    left: 15%;
+    /*    font-size: 40px;*/
 }
 
 
