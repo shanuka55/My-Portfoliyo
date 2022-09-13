@@ -1,5 +1,5 @@
 .Contact{
-    width: 99.1vw;
+    width: 99vw;
     height: 50vh;
     top: 644vh;
     background-color: #11141b;
@@ -106,7 +106,7 @@
 
 #contact-form{
     position: absolute;
-    width: 100%;
+    width: 99vw;
     height: 800px;
     background-color: #000000;
     top: 680vh;
@@ -147,7 +147,7 @@
 
 #footer-bar{
     position: absolute;
-    width: 100%;
+    width: 99vw;
     height: 150px;
     top: 700px;
     background-color: #11141b;

@@ -19,9 +19,11 @@ html {
     background: rgba(66, 65, 65, 0.85);
 }
 
+
+
 header>video{
     left: 0;
-    width: 99.1vw;
+    width: 99vw;
     /*height: 100vh;*/
     top: 0;
     z-index: -1;
