@@ -1,0 +1,10 @@
+footer{
+    width: 99vw;
+    height: 80vh;
+    top: 694vh;
+    background-color: black;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+
+}
