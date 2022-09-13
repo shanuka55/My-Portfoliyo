@@ -1,10 +1,117 @@
 footer{
     width: 99vw;
-    height: 80vh;
+    height: 120vh;
     top: 694vh;
     background-color: black;
     position: absolute;
     background-position: center;
     background-size: cover;
 
+}
+
+.footer>h1{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin: auto;
+    font-size: 50px;
+}
+
+.footer>section:nth-child(2) {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: 120px;
+    margin: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.54),rgba(0, 0, 0, 0.32)),url("../assets/img/footer-image.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.footer>section:nth-child(2)>div {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 850px;
+    height: 57px;
+    background-color: rgba(255, 255, 255, 0.47);
+}
+
+.footer>section:nth-child(2)>div>input {
+    width: 650px;
+    height: 55px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.47);
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: auto;
+    border: none;
+}
+
+.footer>section:nth-child(2)>div>h3 {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    color: #010c2b;
+    font-size: 25px;
+}
+.footer>section:nth-child(2)>div:nth-child(2) {
+    top: 140px;
+}
+
+.footer>section:nth-child(2)>div:nth-child(3) {
+    top: 240px;
+}
+
+.footer>section:nth-child(2)>div:nth-child(4) {
+    top: 340px;
+    height: 200px;
+}
+
+.footer>section:nth-child(2)>div:nth-child(4)>textarea {
+    background-color: rgba(255, 255, 255, 0.47);
+    height: 200px;
+    width: 848px;
+    border: none;
+    margin: 0;
+}
+
+.footer>section:nth-child(2)>div:nth-child(4)>h3 {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.send-btn{
+    font-family: 'Poppins', sans-serif;
+    width: 150px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid rgb(255, 37, 58);
+    background-color: rgba(255, 37, 58, 0.64);
+    border-radius: 25px;
+    padding: 12px 34px;
+    font-size: 23px;
+    cursor: pointer;
+    text-align: center;
+    transition: 1s;
+    position: absolute;
+    top: 600px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.send-btn:hover{
+    border: 3px solid rgb(255, 37, 58);
+    background: rgb(255, 37, 58);
+    transition: 1s;
+    box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.20);
 }
