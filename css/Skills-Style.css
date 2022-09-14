@@ -27,7 +27,6 @@
     width: fit-content;
     height: fit-content;
     font-size: 25px;
-    cursor: pointer;
     font-family: 'Michroma', sans-serif;
 }
 .MySkills>section:nth-child(3){
@@ -41,6 +40,7 @@
     position: absolute;
     display: flex;
     gap: 20px;
+    cursor: pointer;
 }
 .MySkills>section:nth-child(3)>div{
     width: 100%;
@@ -74,6 +74,7 @@
     position: absolute;
     display: flex;
     gap: 20px;
+    cursor: pointer;
 }
 .MySkills>section:nth-child(5)>div{
     width: 100%;
@@ -94,6 +95,7 @@
     height: fit-content;
     font-size: 25px;
     font-family: 'Michroma', sans-serif;
+
 }
 .MySkills>section:nth-child(7){
 
@@ -106,6 +108,7 @@
     position: absolute;
     display: flex;
     gap: 20px;
+    cursor: pointer;
 }
 .MySkills>section:nth-child(7)>div{
     width: 100%;
