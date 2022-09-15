@@ -9,12 +9,27 @@
             background-color: #24327f;
         }
         main{
-            width: 900px;
-            height: 450px;
+            width: 1000px;
+            height: 550px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border: 2px solid red;
+            background-size: cover;
+            background-position: center;
         }
         main>section{
+            width: 400%;
+            height: 100%;
+            display: flex;
 
-
+            animation-name: my-animation;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
         }
     </style>
 </head>
