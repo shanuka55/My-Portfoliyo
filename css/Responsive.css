@@ -99,10 +99,90 @@
     .MySkills>section:nth-child(7) {
         width: 350px;
         height: 151px;
-        top: 650px;
+        top: 595px;
         left: 97px;
     }
 
+    .MySkills>div:nth-child(6) {
+        top: 558px
+    }
+
+    .Education>h1 {
+        left: 42px;
+        top: -11px;
+        font-size: 46px;
+    }
+
+    .Education>section {
+        width: 900px;
+        height: 400px;
+    }
+    .Education>section>div>div:first-of-type {
+        width: 10px;
+        height: 11px;
+    }
+    .Education>section>div>div:nth-child(2) {
+        width: 4px;
+        height: 99px;
+        margin-top: 27px;
+        margin-left: 22px;
+    }
+    .Education>section>div>div:nth-child(3) {
+        width: 10px;
+        height: 11px;
+    }
+    .Education>section>div>div:nth-child(4) {
+        width: 4px;
+        margin-top: 30px;
+        margin-left: 22px;
+    }
+    .Education>section>div>p:nth-child(7){
+        margin-left: 188px;
+        font-size: 16px;
+    }
+    .Education>section>div>p:nth-child(8) {
+        margin-left: 188px;
+        font-size: 16px;
+        margin-top: 146px;
+    }
+
+    .MyProjects>h1 {
+        font-size: 46px;
+    }
+    .my-works>h1 {
+        top: 68px;
+        font-size: 25px;
+    }
+
+    .Contact>h1 {
+        font-size: 46px;
+    }
+    .Contact>section>div {
+        width: 33%;
+        height: 101%;
+    }
+    .Contact>section>div>i {
+        font-size: 83px;
+        margin-left: 12px;
+        margin-top: 40px;
+    }
+    .Contact>section>div>h1 {
+        margin-left: 113px;
+        margin-top: -81px;
+        font-size: 30px;
+    }
+    .Contact>section>div>h3 {
+        margin-left: 112px;
+        margin-top: -14px;
+        font-size: 15px;
+    }
+    .footer>h1{
+        font-size: 46px;
+    }
+
+    .footer>section:nth-child(2)>div>h3 {
+        font-size: 20px;
+    }
 
 
 }
