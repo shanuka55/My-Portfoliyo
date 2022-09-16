@@ -69,6 +69,39 @@
         top: 81px;
         left: 655px;
     }
+    .MyServices>div>div>i {
+        font-size: 40px;
+    }
+    .MyServices>div>p {
+        font-size: 24px;
+        bottom: 52px;
+    }
+    .MySkills>div:nth-child(2),.MySkills>div:nth-child(4),.MySkills>div:nth-child(6) {
+        font-size: 18px;
+    }
+    .MySkills>section:nth-child(3),.MySkills>section:nth-child(5) {
+        width: 934px;
+        height: 112px;
+    }
+    .MySkills>section:nth-child(3)>div>p, .MySkills>section:nth-child(5)>div>p, .MySkills>section:nth-child(7)>div>p {
+        font-size: 20px;
+    }
+    .MySkills>section:nth-child(3)>div>img, .MySkills>section:nth-child(5)>div>img, .MySkills>section:nth-child(7)>div>img {
+        width: 42%;
+        height: 56%;
+        margin-left: 38px;
+        margin-top: 8px;
+    }
+    .MySkills>section:nth-child(7)>div {
+        width: 35%;
+        height: 79%;
+    }
+    .MySkills>section:nth-child(7) {
+        width: 350px;
+        height: 151px;
+        top: 650px;
+        left: 97px;
+    }
 
 
 
