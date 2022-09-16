@@ -186,3 +186,18 @@
 
 
 }
+@media all and (min-width: 425px ) and (max-width: 768px) {
+
+    header>div:nth-child(3)>nav {
+        right: -6px;
+        font-size: 0;
+        top: 10px;
+    }
+
+    header>div:nth-child(3)>p {
+        margin-top: 31px;
+        font-size: 14px;
+        margin-left: 16px;
+    }
+
+}
