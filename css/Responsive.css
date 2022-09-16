@@ -1,0 +1,75 @@
+/*Mini Laptop*/
+
+@media all and (min-width: 768px ) and (max-width: 1024px) {
+
+    header>div:nth-child(3)>nav {
+        right: -3px;
+        font-size: 6px;
+    }
+    header>div:nth-child(3)>p {
+        margin-top: 26px;
+        font-size: 22px;
+    }
+
+    header>div:nth-child(4)>p:nth-child(1) {
+        font-size: 28px;
+        margin-left: 194px;
+    }
+    header>div:nth-child(4)>p:nth-child(2) {
+        font-size: 63px;
+    }
+    header>div:nth-child(5)>ul>li {
+        padding-left: 0px;
+    }
+
+    .hire-btn {
+        width: 150px;
+        left: 14%;
+        font-size: 17px;
+        top: 85%;
+
+    }
+    .View-Work {
+        width: 150px;
+        font-size: 17px;
+        top: 85%;
+    }
+    .AboutMe>h1 {
+        font-size: 46px;
+    }
+    .AboutMe>div:nth-child(2) {
+        width: 394px;
+        height: 355px;
+        top: 145px;
+        left: 68px;
+    }
+    .AboutMe>div:nth-child(3) {
+        width: 51vw;
+        height: 70vh;
+        right: 0px;
+        top: -172px;
+    }
+    .MyServices>h1 {
+        font-size: 46px;
+    }
+
+    .MyServices>div {
+        width: 280px;
+        height: 290px;
+    }
+    .MyServices>div:nth-child(2) {
+        left: 33px;
+        top: 80px;
+    }
+    .MyServices>div:nth-child(3) {
+        top: 81px;
+        left: -4px;
+    }
+    .MyServices>div:nth-child(4) {
+        top: 81px;
+        left: 655px;
+    }
+
+
+
+}

@@ -68,12 +68,12 @@
     <meta name="description" content="This is my port folio.">
     <meta name="author" content="shanuka lakshan">
     <meta name="owner" content="H.G.Shanuka lakshan">
-    <base href="localhost">
+<!--    <base href="localhost">-->
     <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1 minimum-scale=1 user-schaleble=no">
     <meta name="theme-color" content="blue">
 </head>
 <body style="background-color: #11141b !important">
-<header>
+<header id="Home">
     <video autoplay loop muted playsinline ><source src="assets/01.mp4" type="video/mp4"></video>
     <div></div>
     <div>
@@ -81,13 +81,13 @@
         <nav>
 
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Skill</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Project</a></li>
-                <li> <a href="#">contact</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Service">Service</a></li>
+                <li><a href="#Skill">Skill</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li> <a href="#contact">contact</a></li>
             </ul>
         </nav>
     </div>
@@ -110,7 +110,7 @@
 
 </header>
 <main>
-    <section class="AboutMe">
+    <section class="AboutMe" id="About">
         <h1>About me</h1>
         <div><img src="assets/My2.jpeg"></div>
         <div>
@@ -133,14 +133,14 @@
         </div>
     </section>
 
-    <section class="MyServices">
+    <section class="MyServices" id="Service">
         <h1>My Services</h1>
         <div><div><i class="fa-solid fa-screwdriver-wrench"></i></div><p>UI/UX Design </p></div>
         <div><div><i class="fa-solid fa-globe"></i></div><p>Web Development</p></div>
         <div><div><i class="fa-solid fa-circle-nodes"></i></div><p>Logo Design</p></div>
     </section>
 
-    <section class="MySkills">
+    <section class="MySkills" id="Skill">
         <h1>My Skill</h1>
         <div>Languages</div>
         <section>
@@ -210,7 +210,7 @@
         </section>
     </section>
 
-    <section class="Education">
+    <section class="Education" id="Education">
         <h1>My Education</h1>
         <section>
             <div>
@@ -250,7 +250,7 @@
 
     </section>
 
-    <section class="MyProjects">
+    <section class="MyProjects" id="Project">
         <h1>My Project</h1>
 
         <section class="my-works">
@@ -293,7 +293,7 @@
     </section>
 
 
-        <section class="Contact">
+        <section class="Contact" id="contact">
 
             <h1>
                 Contact me
@@ -323,7 +323,7 @@
 </main>
 
 
-<footer class="footer">
+<footer class="footer" >
     <h1>Get In Touch</h1>
     <section>
         <div>
