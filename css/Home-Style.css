@@ -123,12 +123,13 @@ header>div:nth-child(5){
     margin: auto;
 
 }
+
 header>div:nth-child(5)>ul>li{
     list-style: none;
     display: inline-block;
     color: white;
-    font-size: 50px;
-    padding-left: 10px;
+    font-size: 54px;
+    padding-left: 0;
 }
 .hire-btn{
     /*font-family: 'Poppins', sans-serif;*/
@@ -140,15 +141,15 @@ header>div:nth-child(5)>ul>li{
     border-radius: 25px;
     margin-left: 150px;
     padding: 12px 34px;
-    font-size: 23px;
+    font-size: 20px;
     background: transparent;
     cursor: pointer;
     text-align: center;
     transition: 1s;
     position: absolute;
     z-index: 1;
-    top: 75%;
-    left: 25%;
+    top: 85%;
+    left: 23%
 }
 .hire-btn:hover{
     border: 3px solid #f44336;
@@ -165,15 +166,15 @@ header>div:nth-child(5)>ul>li{
     border-radius: 25px;
     margin-left: 150px;
     padding: 12px 34px;
-    font-size: 23px;
+    font-size: 20px;
     background: transparent;
     cursor: pointer;
     text-align: center;
     transition: 1s;
     position: absolute;
     z-index: 1;
-    top: 75%;
-    left: 40%;
+    top: 85%;
+    left: 42%;
 }
 .View-Work:hover{
     border: 3px solid #f44336;

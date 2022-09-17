@@ -220,5 +220,88 @@
         left: 252px;
     }
 
+    .AboutMe>h1 {
+        font-size: 34px;
+        top: 42px;
+    }
+    .AboutMe>div:nth-child(2) {
+        width: 310px;
+        height: 302px;
+        top: 145px;
+        left: 41px;
+    }
+    .AboutMe>div:nth-child(3) {
+        width: 38vw;
+        height: 67vh;
+        right: 62px;
+        top: -196px;
+    }
+    .AboutMe>div:nth-child(3)>p:nth-child(1) {
+        font-size: 21px;
+    }
+    .AboutMe>div:nth-child(3)>p:nth-child(2) {
+        font-size: 10px;
+        color: white;
+        margin: 0;
+    }
+    .AboutMe>div:nth-child(3)>p:nth-child(3) {
+        font-size: 11px;
+        line-height: 24px;
+    }
+    .AboutMe>div:nth-child(3)>p:nth-child(4) {
+        font-size: 12px;
+    }
+
+    .MyServices>h1 {
+        font-size: 34px;
+        top: 42px;
+    }
+    .MyServices>div {
+        width: 220px;
+        height: 220px;
+    }
+    .MyServices>div:nth-child(4) {
+        top: 81px;
+        left: 488px;
+    }
+    .MyServices>div:nth-child(3) {
+        top: 81px;
+        left: 0px;
+    }
+    .MyServices>div>p {
+        font-size: 18px;
+        bottom: 30px;
+    }
+    .MyServices>div>div {
+        width: 85px;
+        height: 85px;
+    }
+    .MyServices>div>div>i {
+        font-size: 33px;
+    }
+
+
+    .MySkills>h1 {
+        font-size: 34px;
+        top: 42px;
+    }
+    .MySkills>section:nth-child(3), .MySkills>section:nth-child(5) {
+        width: 704px;
+        height: 96px;
+    }
+    .MySkills>section:nth-child(3)>div>img, .MySkills>section:nth-child(5)>div>img, .MySkills>section:nth-child(7)>div>img {
+        width: 51%;
+        height: 51%;
+        margin-left: 25px;
+        margin-top: 8px;
+    }
+    .MySkills>section:nth-child(3)>div>p, .MySkills>section:nth-child(5)>div>p, .MySkills>section:nth-child(7)>div>p {
+        font-size: 15px;
+    }
+
+
+
+
+
 
 }
