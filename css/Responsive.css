@@ -385,6 +385,30 @@
         width: 170px;
         height: 30px;
     }
+    .my-works>a:nth-child(7)>div>h3 {
+        top: 4px;
+        left: 11px;
+    }
+    .my-works>a:nth-child(7)>div>i {
+        font-size: 20px;
+        color: #ffd778;
+        right: -13px;
+    }
+    .Contact>h1{
+        font-size: 34px;
+        top: -53px;
+    }
+    .Contact>section {
+        position: absolute;
+        width: 164%;
+        height: 28%;
+        top: 15px;
+        left: 173px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
 
 
 
