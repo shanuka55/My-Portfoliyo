@@ -400,13 +400,32 @@
     }
     .Contact>section {
         position: absolute;
-        width: 164%;
-        height: 28%;
+        width: 1000px;
+        height: 270px;
         top: 15px;
         left: 173px;
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
     }
+    .Contact>section>div>i {
+        font-size: 52px;
+        margin-left: 23px;
+        margin-top: 19px;
+    }
+    .Contact>section>div>h1 {
+        margin-left: 113px;
+        margin-top: -46px;
+        font-size: 23px;
+        color: greenyellow;
+    }
+    .Contact>section>div {
+        width: 40%;
+        height: 107%;
+    }
+    .Contact>section>div>h3 {
+        color: lightslategrey;
+    }
+
 
 
 
