@@ -400,7 +400,7 @@
     }
     .Contact>section {
         position: absolute;
-        width: 1000px;
+        width: 590px;
         height: 270px;
         top: 15px;
         left: 173px;
@@ -419,12 +419,69 @@
         color: greenyellow;
     }
     .Contact>section>div {
-        width: 40%;
+        width: 69%;
         height: 107%;
     }
     .Contact>section>div>h3 {
         color: lightslategrey;
     }
+
+    .footer>h1{
+        font-size: 34px;
+        top: 52px;
+    }
+
+    .footer>section:nth-child(2)>div {
+        top: 79px;
+        width: 727px;
+        height: 39px;
+    }
+    .footer>section:nth-child(2)>div:nth-child(2) {
+        top: 140px;
+    }
+    .footer>section:nth-child(2)>div {
+        top: 79px;
+        width: 716px;
+        height: 39px;
+    }
+    .footer>section:nth-child(2)>div:nth-child(3) {
+        top: 199px;
+    }
+    .footer>section:nth-child(2)>div>h3 {
+        font-size: 16px;
+    }
+    .footer>section:nth-child(2)>div>input {
+        width: 639px;
+        height: 37px;
+        font-size: 20px;
+    }
+    .footer>section:nth-child(2)>div:nth-child(4) {
+        top: 261px;
+        height: 145px;
+    }
+    .footer>section:nth-child(2)>div:nth-child(4)>textarea {
+        height: 143px;
+        width: 713px;
+    }
+    .send-btn {
+        width: 630px;
+        font-size: 15px;
+        top: 454px;
+    }
+
+    footer {
+        height: 114vh;
+    }
+    .footer>section:nth-child(3) {
+        top: 693px;
+    }
+    .footer>section:nth-child(2) {
+        width: 99%;
+        height: 687px;
+        top: 120px;
+    }
+
+
 
 
 
