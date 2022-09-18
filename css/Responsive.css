@@ -188,6 +188,19 @@
 }
 @media all and (min-width: 425px ) and (max-width: 768px) {
 
+    header>video {
+        visibility: hidden;
+    }
+    header>div:nth-child(2) {
+        width: 762px;
+        height: 813px;
+    }
+    header>div:nth-child(4)>p:nth-child(2) {
+        font-size: 59px;
+        color: rgb(248 255 52 / 32%);
+    }
+
+
     header>div:nth-child(3)>nav {
         right: -6px;
         font-size: 0;
@@ -223,6 +236,7 @@
     .AboutMe>h1 {
         font-size: 34px;
         top: 42px;
+
     }
     .AboutMe>div:nth-child(2) {
         width: 310px;
