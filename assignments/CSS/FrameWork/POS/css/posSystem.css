@@ -1,0 +1,14 @@
+
+.navbar>div>a{
+    color: #4f5050;
+}
+.navbar>div>a{
+    margin-left: 40px;
+}
+.navbar>div>div{
+    position: absolute;
+    margin-left: 900px;
+}
+.navbar>div>div>form>button{
+   margin-left: 15px;
+}
