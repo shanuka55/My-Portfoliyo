@@ -712,7 +712,57 @@
         gap: 38px;
         flex-direction: column;
     }
-
+    .MySkills>div:nth-child(2) {
+        top: 100px;
+        font-size: 10px;
+        right: 216px;
+    }
+    .MySkills>div:nth-child(4) {
+        font-size: 10px;
+        top: 100px;
+        left: 11px;
+        color: #1cb6ff;
+    }
+    .MySkills>div:nth-child(6) {
+        color: #ef538f;
+        font-size: 11px;
+        top: 100px;
+        left: 246px;
+    }
+    .Education>h1{
+        font-size: 35px;
+    }
+    .Education>section>div>div:nth-child(1),.Education>section>div>div:nth-child(2),.Education>section>div>div:nth-child(3),.Education>section>div>div:nth-child(4) {
+        display: none;
+    }
+    .Education>section>div>div:nth-child(5) {
+        width: 60px;
+        height: 60px;
+        margin-top: 44px;
+        margin-left: 52px;
+    }
+    .Education>section>div>div:nth-child(6) {
+        width: 60px;
+        height: 60px;
+        margin-top: 45px;
+        margin-left: 53px;
+    }
+    .Education>section>div>p:nth-child(7) {
+        margin-left: 141px;
+        margin-top: -156px;
+    }
+    .Education>section>div>p:nth-child(8) {
+        margin-left: 141px;
+        margin-top: 75px;
+        font-size: 12px;
+    }
+    .Education>section>div {
+        width: 25%;
+        height: 62%;
+        position: relative;
+        left: 38px;
+        top: -16px;
+    }
 
 
 
