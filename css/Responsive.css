@@ -584,7 +584,7 @@
         margin-left: 150px;
         padding: 8px 6px;
         font-size: 12px;
-        top: 93%;
+        top: 106%;
         left: 12%;
     }
     .View-Work {
@@ -592,9 +592,10 @@
         margin-left: 150px;
         padding: 8px 6px;
         font-size: 12px;
-        top: 93%;
+        top: 106%;
         left: -35%;
     }
+
     header>video {
         display: none;
     }
@@ -602,6 +603,78 @@
         width: 371px;
         height: 641px;
     }
+
+    .AboutMe>h1 {
+        font-size: 35px;
+    }
+    .AboutMe>div:nth-child(2) {
+        width: 270px;
+        height: 250px;
+        top: 81px;
+        left: 51px;
+    }
+    .AboutMe>div:nth-child(3) {
+        width: 82vw;
+        height: 40vh;
+        right: 19px;
+    }
+    .AboutMe>div:nth-child(3)>p:nth-child(1) {
+        font-size: 24px;
+    }
+    .AboutMe>div:nth-child(3)>p:nth-child(2) {
+        font-size: 9px;
+    }
+    .AboutMe>div:nth-child(3)>p:nth-child(3) {
+        font-size: 12px;
+        margin-top: 15px;
+        line-height: 17px;
+    }
+    .AboutMe>div:nth-child(3)>p:nth-child(4) {
+        font-size: 10px;
+        margin-top: 32px;
+    }
+    .MyServices>h1 {
+        font-size: 35px;
+    }
+    .MyServices>div {
+        width: 230px;
+        height: 123px;
+    }
+    .MyServices>div:nth-child(2) {
+        left: 78px;
+        top: 0;
+        bottom: 261px;
+    }
+    .MyServices>div:nth-child(3) {
+        top: 50px;
+        left: 15px;
+    }
+    .MyServices>div:nth-child(4) {
+        top: 362px;
+        left: 12px;
+    }
+    .MyServices>div>div {
+        width: 82px;
+        height: 82px;
+        bottom: -3px;
+        left: -108px;
+    }
+    .MyServices>div>p {
+        font-size: 14px;
+        bottom: 17px;
+        left: 100px;
+    }
+    .MyServices>div>div>i {
+        font-size: 35px;
+    }
+
+    .MySkills>h1 {
+        font-size: 35px;
+    }
+
+
+
+
 
 
 
