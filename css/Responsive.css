@@ -186,233 +186,271 @@
 
 
 }
-@media all and (min-width: 425px ) and (max-width: 768px) {
+@media all and (min-width: 425px) and (max-width: 768px) {
 
-    header>video {
+    header > video {
         visibility: hidden;
     }
-    header>div:nth-child(2) {
+
+    header > div:nth-child(2) {
         width: 762px;
         height: 813px;
     }
-    header>div:nth-child(4)>p:nth-child(2) {
+
+    header > div:nth-child(4) > p:nth-child(2) {
         font-size: 59px;
-        color: rgb(248 255 52 / 32%);
+        /*color: rgb(248 255 52  32%);*/
     }
 
 
-    header>div:nth-child(3)>nav {
+    header > div:nth-child(3) > nav {
         right: -6px;
         font-size: 0;
         top: 10px;
     }
 
-    header>div:nth-child(3)>p {
+    header > div:nth-child(3) > p {
         margin-top: 31px;
         font-size: 14px;
         margin-left: 16px;
     }
 
-    header>div:nth-child(4)>p:nth-child(1) {
+    header > div:nth-child(4) > p:nth-child(1) {
         font-size: 20px;
         margin-left: 219px;
         margin-top: 31px;
     }
-    header>div:nth-child(4)>p:nth-child(2) {
+
+    header > div:nth-child(4) > p:nth-child(2) {
         font-size: 59px;
     }
-    header>div:nth-child(5)>ul>li {
+
+    header > div:nth-child(5) > ul > li {
         font-size: 31px;
     }
+
     .hire-btn {
         left: 2%;
         font-size: 10px;
     }
+
     .View-Work {
         font-size: 10px;
         left: 252px;
     }
 
-    .AboutMe>h1 {
+    .AboutMe > h1 {
         font-size: 34px;
         top: 42px;
 
     }
-    .AboutMe>div:nth-child(2) {
+
+    .AboutMe > div:nth-child(2) {
         width: 310px;
         height: 302px;
         top: 145px;
         left: 41px;
     }
-    .AboutMe>div:nth-child(3) {
+
+    .AboutMe > div:nth-child(3) {
         width: 38vw;
         height: 67vh;
         right: 62px;
         top: -196px;
     }
-    .AboutMe>div:nth-child(3)>p:nth-child(1) {
+
+    .AboutMe > div:nth-child(3) > p:nth-child(1) {
         font-size: 21px;
     }
-    .AboutMe>div:nth-child(3)>p:nth-child(2) {
+
+    .AboutMe > div:nth-child(3) > p:nth-child(2) {
         font-size: 10px;
         color: white;
         margin: 0;
     }
-    .AboutMe>div:nth-child(3)>p:nth-child(3) {
+
+    .AboutMe > div:nth-child(3) > p:nth-child(3) {
         font-size: 11px;
         line-height: 24px;
     }
-    .AboutMe>div:nth-child(3)>p:nth-child(4) {
+
+    .AboutMe > div:nth-child(3) > p:nth-child(4) {
         font-size: 12px;
     }
 
-    .MyServices>h1 {
+    .MyServices > h1 {
         font-size: 34px;
         top: 42px;
     }
-    .MyServices>div {
+
+    .MyServices > div {
         width: 220px;
         height: 220px;
     }
-    .MyServices>div:nth-child(4) {
+
+    .MyServices > div:nth-child(4) {
         top: 81px;
         left: 488px;
     }
-    .MyServices>div:nth-child(3) {
+
+    .MyServices > div:nth-child(3) {
         top: 81px;
         left: 0px;
     }
-    .MyServices>div>p {
+
+    .MyServices > div > p {
         font-size: 18px;
         bottom: 30px;
     }
-    .MyServices>div>div {
+
+    .MyServices > div > div {
         width: 85px;
         height: 85px;
     }
-    .MyServices>div>div>i {
+
+    .MyServices > div > div > i {
         font-size: 33px;
     }
 
 
-    .MySkills>h1 {
+    .MySkills > h1 {
         font-size: 34px;
         top: 42px;
     }
-    .MySkills>section:nth-child(3), .MySkills>section:nth-child(5) {
+
+    .MySkills > section:nth-child(3), .MySkills > section:nth-child(5) {
         width: 704px;
         height: 96px;
     }
-    .MySkills>section:nth-child(3)>div>img, .MySkills>section:nth-child(5)>div>img, .MySkills>section:nth-child(7)>div>img {
+
+    .MySkills > section:nth-child(3) > div > img, .MySkills > section:nth-child(5) > div > img, .MySkills > section:nth-child(7) > div > img {
         width: 51%;
         height: 51%;
         margin-left: 25px;
         margin-top: 8px;
     }
-    .MySkills>section:nth-child(3)>div>p, .MySkills>section:nth-child(5)>div>p, .MySkills>section:nth-child(7)>div>p {
+
+    .MySkills > section:nth-child(3) > div > p, .MySkills > section:nth-child(5) > div > p, .MySkills > section:nth-child(7) > div > p {
         font-size: 15px;
     }
 
-    .MySkills>section:nth-child(7) {
+    .MySkills > section:nth-child(7) {
         width: 290px;
         height: 125px;
         left: 71px;
     }
 
-    .Education>h1{
+    .Education > h1 {
         font-size: 34px;
         top: 0px;
     }
 
-    .Education>section {
+    .Education > section {
         width: 720px;
         height: 380px;
     }
-    .Education>section>div>p:nth-child(7) {
+
+    .Education > section > div > p:nth-child(7) {
         margin-left: 161px;
         font-size: 11px;
         margin-top: -233px;
     }
-    .Education>section>div>p:nth-child(8) {
+
+    .Education > section > div > p:nth-child(8) {
         margin-left: 160px;
         font-size: 11px;
         margin-top: 146px;
     }
-    .Education>section>div>div:nth-child(5) {
+
+    .Education > section > div > div:nth-child(5) {
         width: 87px;
         height: 85px;
         margin-left: 49px;
     }
-    .Education>section>div>div:nth-child(6) {
+
+    .Education > section > div > div:nth-child(6) {
         width: 87px;
         height: 85px;
         margin-left: 49px;
 
     }
-    .MyProjects>h1{
+
+    .MyProjects > h1 {
         font-size: 34px;
     }
 
-    .my-works>h1 {
+    .my-works > h1 {
         top: 68px;
         font-size: 17px;
         color: #a9a902;
     }
-    .my-works>div:nth-child(3) {
+
+    .my-works > div:nth-child(3) {
         width: 300px;
         height: 200px;
     }
-    .my-works>div:nth-child(3) {
+
+    .my-works > div:nth-child(3) {
         width: 288px;
         height: 210px;
     }
-    .my-works>div:nth-child(2) {
+
+    .my-works > div:nth-child(2) {
         width: 300px;
         height: 150px;
         left: 250px;
         right: 40px;
     }
-    .my-works>div:nth-child(4) {
+
+    .my-works > div:nth-child(4) {
         width: 270px;
         height: 103px;
     }
-    .my-works>div:nth-child(1) {
+
+    .my-works > div:nth-child(1) {
         width: 200px;
         height: 106px;
         left: 450px;
     }
-    .my-works>div:nth-child(5) {
+
+    .my-works > div:nth-child(5) {
         width: 300px;
         height: 152px;
         left: 70px;
     }
-    .my-works>div:nth-child(6) {
+
+    .my-works > div:nth-child(6) {
         bottom: 94px;
     }
 
-    .my-works>div:nth-child(6)>div {
+    .my-works > div:nth-child(6) > div {
         width: 30px;
         height: 30px;
         margin-left: 17px;
     }
-    .my-works>a:nth-child(7)>div {
+
+    .my-works > a:nth-child(7) > div {
         width: 170px;
         height: 30px;
     }
-    .my-works>a:nth-child(7)>div>h3 {
+
+    .my-works > a:nth-child(7) > div > h3 {
         top: 4px;
         left: 11px;
     }
-    .my-works>a:nth-child(7)>div>i {
+
+    .my-works > a:nth-child(7) > div > i {
         font-size: 20px;
         color: #ffd778;
         right: -13px;
     }
-    .Contact>h1{
+
+    .Contact > h1 {
         font-size: 34px;
         top: -53px;
     }
-    .Contact>section {
+
+    .Contact > section {
         position: absolute;
         width: 590px;
         height: 270px;
@@ -421,62 +459,74 @@
         /* display: flex; */
         flex-direction: column;
     }
-    .Contact>section>div>i {
+
+    .Contact > section > div > i {
         font-size: 52px;
         margin-left: 23px;
         margin-top: 19px;
     }
-    .Contact>section>div>h1 {
+
+    .Contact > section > div > h1 {
         margin-left: 113px;
         margin-top: -46px;
         font-size: 23px;
         color: greenyellow;
     }
-    .Contact>section>div {
+
+    .Contact > section > div {
         width: 69%;
         height: 107%;
     }
-    .Contact>section>div>h3 {
+
+    .Contact > section > div > h3 {
         color: lightslategrey;
     }
 
-    .footer>h1{
+    .footer > h1 {
         font-size: 34px;
         top: 52px;
     }
 
-    .footer>section:nth-child(2)>div {
+    .footer > section:nth-child(2) > div {
         top: 79px;
         width: 727px;
         height: 39px;
     }
-    .footer>section:nth-child(2)>div:nth-child(2) {
+
+    .footer > section:nth-child(2) > div:nth-child(2) {
         top: 140px;
     }
-    .footer>section:nth-child(2)>div {
+
+    .footer > section:nth-child(2) > div {
         top: 79px;
         width: 716px;
         height: 39px;
     }
-    .footer>section:nth-child(2)>div:nth-child(3) {
+
+    .footer > section:nth-child(2) > div:nth-child(3) {
         top: 199px;
     }
-    .footer>section:nth-child(2)>div>h3 {
+
+    .footer > section:nth-child(2) > div > h3 {
         font-size: 16px;
     }
-    .footer>section:nth-child(2)>div>input {
+
+    .footer > section:nth-child(2) > div > input {
         width: 639px;
         height: 37px;
         font-size: 20px;
     }
-    .footer>section:nth-child(2)>div:nth-child(4) {
+
+    .footer > section:nth-child(2) > div:nth-child(4) {
         top: 261px;
         height: 145px;
     }
-    .footer>section:nth-child(2)>div:nth-child(4)>textarea {
+
+    .footer > section:nth-child(2) > div:nth-child(4) > textarea {
         height: 143px;
         width: 713px;
     }
+
     .send-btn {
         width: 630px;
         font-size: 15px;
@@ -486,29 +536,63 @@
     footer {
         height: 114vh;
     }
-    .footer>section:nth-child(3) {
+
+    .footer > section:nth-child(3) {
         top: 693px;
     }
-    .footer>section:nth-child(2) {
+
+    .footer > section:nth-child(2) {
         width: 99%;
         height: 687px;
         top: 120px;
     }
 
+}
+@media all and (max-width: 425px) {
 
 
 
+    /*header>div:nth-child(3)>nav>ul>{*/
+    /*    display: none;*/
+    /*}*/
+    /*header > div:nth-child(3) > nav {*/
+    /*    right: -6px;*/
+    /*    font-size: 0;*/
+    /*    top: -98px;*/
+    /*}*/
+    /*header > div:nth-child(3) > p {*/
+    /*    margin-top: 22px;*/
+    /*    font-size: 24px;*/
+    /*    margin-left: 20px;*/
+    /*}*/
+    /*header > div:nth-child(4) > p:nth-child(1) {*/
+    /*    font-size: 12px;*/
+    /*    margin-left: 5px;*/
+    /*    margin-top: 69px;*/
+    /*}*/
+    /*header > div:nth-child(4) > p:nth-child(2) {*/
+    /*    font-size: 35px;*/
+    /*    margin-top: 6px;*/
+    /*    margin-bottom: 429px;*/
+    /*}*/
+    /*header>div:nth-child(5)>ul>li {*/
+    /*    list-style: none;*/
+    /*    display: block;*/
+    /*    color: white;*/
+    /*    font-size: 48px;*/
+    /*    padding-left: 0;*/
+    /*}*/
+
+    /*header > div:nth-child(4) > p:nth-child(1) {*/
+    /*    font-size: 5px;*/
+    /*    margin-left: 100px;*/
+    /*    margin-top: 31px;*/
+    /*}*/
+    /*header > div:nth-child(4) > p:nth-child(2) {*/
+    /*    font-size: 14px;*/
+    /*    margin-top: 6px;*/
+    /*    margin-bottom: 429px;*/
+    /*}*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-    }
+}
