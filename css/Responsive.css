@@ -802,6 +802,92 @@
     .MyProjects>h1 {
         font-size: 35px;
     }
+    .my-works>div:nth-child(1) {
+        display: none;
+    }
+    .my-works>div:nth-child(2) {
+        display: none;
+    }
+    .my-works>div:nth-child(3) {
+
+    }
+    .my-works>div:nth-child(4) {
+        display: none;
+    }
+    .my-works>div:nth-child(5) {
+        display: none;
+    }
+    .my-works>div:nth-child(3) {
+        width: 250px;
+        height: 200px;
+        bottom: 127px;
+        opacity: 59%;
+    }
+    .my-works>h1 {
+        top: 78px;
+        font-size: 20px;
+        color: mediumvioletred;
+    }
+    .my-works>div:nth-child(6)>div {
+        width: 20px;
+        height: 20px;
+        margin-left: 31px;
+    }
+    .my-works>div:nth-child(6)>i {
+        font-size: 28px;
+    }
+    .my-works>div:nth-child(6)>i:first-of-type {
+        right: 254px;
+    }
+    .my-works>div:nth-child(6)>i {
+        font-size: 22px;
+        left: 0;
+    }
+    .my-works>div:nth-child(6)>i:last-of-type {
+        left: 281px;
+    }
+    .my-works>div:nth-child(6) {
+        bottom: 197px;
+        left: -24px;
+    }
+    .my-works>a:nth-child(7)>div {
+        width: 180px;
+        height: 54px;
+        top: 420px;
+        right: 69px;
+    }
+    .MyProjects {
+        height: 90vh;
+    }
+    .Contact>h1 {
+        top: -191px;
+        font-size: 35px;
+    }
+    .Contact>section {
+        width: 87%;
+        height: 36%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .Contact>section>div {
+        width: 100%;
+        height: 89%;
+        gap: 20px;
+        left: 28px;
+        bottom: 135px;
+    }
+    .Contact>section>div>i {
+        font-size: 63px;
+        color: #5c5959;
+        margin-left: 22px;
+        margin-top: 31px;
+        position: relative;
+        bottom: 17px;
+    }
+
+
+
 
 
 
