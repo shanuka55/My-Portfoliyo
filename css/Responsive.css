@@ -918,6 +918,61 @@
         font-size: 14px;
         bottom: 80px;
     }
+    .footer>h1 {
+        font-size: 35px;
+    }
+    .footer>section:nth-child(2)>div>input {
+        width: 250px;
+        height: 34px;
+        font-size: 12px;
+        left: -316px;
+    }
+    .footer>section:nth-child(2)>div {
+        top: -21px;
+        width: 754px;
+        height: 37px;
+    }
+    .footer>section:nth-child(2)>div {
+        top: -30px;
+        width: 294px;
+        height: 37px;
+    }
+    .footer>section:nth-child(2)>div>input {
+        width: 220px;
+        height: 35px;
+        font-size: 12px;
+        left: 71px;
+    }
+    .footer>section:nth-child(2)>div>h3 {
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    .footer>section:nth-child(2)>div:nth-child(2) {
+        top: 23px;
+    }
+    .footer>section:nth-child(2)>div:nth-child(3) {
+        top: 81px;
+    }
+
+    .footer>section:nth-child(2)>div:nth-child(4)>textarea {
+        height: 199px;
+        width: 290px;
+    }
+    .footer>section:nth-child(2)>div:nth-child(4) {
+        top: 141px;
+    }
+    footer {
+        width: 99vw;
+        height: 99vh;
+    }
+    .send-btn {
+        width: 218px;
+        padding: 12px 34px;
+        font-size: 23px;
+        top: 386px;
+    }
+
 
 
 
