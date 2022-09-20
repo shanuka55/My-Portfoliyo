@@ -885,6 +885,40 @@
         position: relative;
         bottom: 17px;
     }
+    .Contact>section>div>h1 {
+        margin-left: 108px;
+        margin-top: 0;
+        font-size: 19px;
+        position: relative;
+        top: -72px;
+        color: darkgray;
+    }
+    .Contact>section>div>h1 {
+        margin-left: 108px;
+        margin-top: 0;
+        font-size: 19px;
+        position: relative;
+        top: -72px;
+        color: darkgray;
+    }
+    .Contact>section {
+        width: 87%;
+        height: 36%;
+        gap: 20px;
+        top: -114px;
+        left: 22px;
+    }
+    .Contact>section>div>h3 {
+        color: #798392;
+        margin-left: 0;
+        margin-top: 0;
+        position: relative;
+        left: 100px;
+        right: 0;
+        font-size: 14px;
+        bottom: 80px;
+    }
+
 
 
 
