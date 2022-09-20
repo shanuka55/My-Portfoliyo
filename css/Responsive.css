@@ -550,35 +550,40 @@
 }
 @media all and (max-width: 425px) {
 
-    header>div:nth-child(3)>nav {
+    header > div:nth-child(3) > nav {
         display: none;
     }
-    header>div:nth-child(4)>p:nth-child(1) {
+
+    header > div:nth-child(4) > p:nth-child(1) {
         font-size: 17px;
         margin-left: 12px;
     }
-    header>div:nth-child(4)>p:nth-child(2) {
+
+    header > div:nth-child(4) > p:nth-child(2) {
         font-size: 33px;
         margin-bottom: 447px;
     }
 
-    header>div:nth-child(5)>ul>li {
+    header > div:nth-child(5) > ul > li {
         list-style: none;
         display: block;
         color: white;
         font-size: 40px;
         padding-left: 0;
     }
-    header>div:nth-child(5) {
+
+    header > div:nth-child(5) {
         top: 107px;
         left: 203px;
     }
+
     .hover-fx {
         margin: 24px;
         width: 62px;
         height: 59px;
         line-height: 63px;
     }
+
     .hire-btn {
         width: 145px;
         margin-left: 150px;
@@ -587,6 +592,7 @@
         top: 106%;
         left: 12%;
     }
+
     .View-Work {
         width: 150px;
         margin-left: 150px;
@@ -596,87 +602,103 @@
         left: -35%;
     }
 
-    header>video {
+    header > video {
         display: none;
     }
-    header>div:nth-child(2) {
+
+    header > div:nth-child(2) {
         width: 371px;
         height: 641px;
     }
 
-    .AboutMe>h1 {
+    .AboutMe > h1 {
         font-size: 35px;
     }
-    .AboutMe>div:nth-child(2) {
+
+    .AboutMe > div:nth-child(2) {
         width: 270px;
         height: 250px;
         top: 81px;
         left: 51px;
     }
-    .AboutMe>div:nth-child(3) {
+
+    .AboutMe > div:nth-child(3) {
         width: 82vw;
         height: 40vh;
         right: 19px;
     }
-    .AboutMe>div:nth-child(3)>p:nth-child(1) {
+
+    .AboutMe > div:nth-child(3) > p:nth-child(1) {
         font-size: 24px;
     }
-    .AboutMe>div:nth-child(3)>p:nth-child(2) {
+
+    .AboutMe > div:nth-child(3) > p:nth-child(2) {
         font-size: 9px;
     }
-    .AboutMe>div:nth-child(3)>p:nth-child(3) {
+
+    .AboutMe > div:nth-child(3) > p:nth-child(3) {
         font-size: 12px;
         margin-top: 15px;
         line-height: 17px;
     }
-    .AboutMe>div:nth-child(3)>p:nth-child(4) {
+
+    .AboutMe > div:nth-child(3) > p:nth-child(4) {
         font-size: 10px;
         margin-top: 32px;
     }
-    .MyServices>h1 {
+
+    .MyServices > h1 {
         font-size: 35px;
     }
-    .MyServices>div {
+
+    .MyServices > div {
         width: 230px;
         height: 123px;
     }
-    .MyServices>div:nth-child(2) {
+
+    .MyServices > div:nth-child(2) {
         left: 78px;
         top: 0;
         bottom: 261px;
     }
-    .MyServices>div:nth-child(3) {
+
+    .MyServices > div:nth-child(3) {
         top: 50px;
         left: 15px;
     }
-    .MyServices>div:nth-child(4) {
+
+    .MyServices > div:nth-child(4) {
         top: 362px;
         left: 12px;
     }
-    .MyServices>div>div {
+
+    .MyServices > div > div {
         width: 82px;
         height: 82px;
         bottom: -3px;
         left: -108px;
     }
-    .MyServices>div>p {
+
+    .MyServices > div > p {
         font-size: 14px;
         bottom: 17px;
         left: 100px;
     }
-    .MyServices>div>div>i {
+
+    .MyServices > div > div > i {
         font-size: 35px;
     }
 
-    .MySkills>h1 {
+    .MySkills > h1 {
         font-size: 35px;
     }
 
-    .MySkills>div:nth-child(2) {
+    .MySkills > div:nth-child(2) {
         top: 100px;
         font-size: 14px;
     }
-    .MySkills>section:nth-child(3) {
+
+    .MySkills > section:nth-child(3) {
         width: 100px;
         height: 100px;
         top: 133px;
@@ -686,7 +708,8 @@
         gap: 38px;
         flex-direction: column;
     }
-    .MySkills>section:nth-child(5) {
+
+    .MySkills > section:nth-child(5) {
         width: 100px;
         height: 100px;
         top: 133px;
@@ -695,16 +718,19 @@
         gap: 38px;
         flex-direction: column;
     }
-    .MySkills>section:nth-child(3)>div>img, .MySkills>section:nth-child(5)>div>img, .MySkills>section:nth-child(7)>div>img {
+
+    .MySkills > section:nth-child(3) > div > img, .MySkills > section:nth-child(5) > div > img, .MySkills > section:nth-child(7) > div > img {
         width: 40%;
         height: 52%;
         margin-left: 30px;
         margin-top: 10px;
     }
-    .MySkills>section:nth-child(3)>div>p, .MySkills>section:nth-child(5)>div>p, .MySkills>section:nth-child(7)>div>p {
+
+    .MySkills > section:nth-child(3) > div > p, .MySkills > section:nth-child(5) > div > p, .MySkills > section:nth-child(7) > div > p {
         font-size: 13px;
     }
-    .MySkills>section:nth-child(7) {
+
+    .MySkills > section:nth-child(7) {
         width: 100px;
         height: 100px;
         top: 133px;
@@ -712,46 +738,55 @@
         gap: 38px;
         flex-direction: column;
     }
-    .MySkills>div:nth-child(2) {
+
+    .MySkills > div:nth-child(2) {
         top: 100px;
         font-size: 10px;
         right: 216px;
     }
-    .MySkills>div:nth-child(4) {
+
+    .MySkills > div:nth-child(4) {
         font-size: 10px;
         top: 100px;
         left: 11px;
         color: #1cb6ff;
     }
-    .MySkills>div:nth-child(6) {
+
+    .MySkills > div:nth-child(6) {
         color: #ef538f;
         font-size: 11px;
         top: 100px;
         left: 246px;
     }
-    .Education>h1{
+
+    .Education > h1 {
         font-size: 35px;
         top: -66px;
     }
-    .Education>section>div>div:nth-child(1),.Education>section>div>div:nth-child(2),.Education>section>div>div:nth-child(3),.Education>section>div>div:nth-child(4) {
+
+    .Education > section > div > div:nth-child(1), .Education > section > div > div:nth-child(2), .Education > section > div > div:nth-child(3), .Education > section > div > div:nth-child(4) {
         display: none;
     }
-    .Education>section>div>div:nth-child(5) {
+
+    .Education > section > div > div:nth-child(5) {
         width: 60px;
         height: 60px;
         margin-top: 44px;
         margin-left: 26px;
     }
-    .Education>section>div>div:nth-child(6) {
+
+    .Education > section > div > div:nth-child(6) {
         width: 60px;
         height: 60px;
         margin-top: 44px;
         margin-left: 26px;
     }
-    .Education>section>div>p:nth-child(7) {
+
+    .Education > section > div > p:nth-child(7) {
         margin-left: 141px;
         margin-top: -156px;
     }
+
     /*.Education>section>div>p:nth-child(8) {*/
     /*    margin-left: 141px;*/
     /*    margin-top: 75px;*/
@@ -764,120 +799,144 @@
     /*    left: 38px;*/
     /*    top: -16px;*/
     /*}*/
-    .Education>section>div:nth-child(1) {
+    .Education > section > div:nth-child(1) {
         width: 28%;
         height: 59%;
         position: relative;
         left: 18px;
         top: -100px;
     }
-    .Education>section>div:nth-child(1)>p:nth-child(7) {
+
+    .Education > section > div:nth-child(1) > p:nth-child(7) {
         margin-left: 135px;
         margin-top: -163px;
         font-size: 11px;
     }
-    .Education>section>div:nth-child(1)>p:nth-child(8) {
+
+    .Education > section > div:nth-child(1) > p:nth-child(8) {
         margin-left: 137px;
         margin-top: 96px;
         font-size: 11px;
     }
-    .Education>section>div:nth-child(2) {
+
+    .Education > section > div:nth-child(2) {
         width: 28%;
         height: 59%;
         position: relative;
         left: -344px;
         top: 154px;
     }
-    .Education>section>div:nth-child(2)>p:nth-child(7) {
+
+    .Education > section > div:nth-child(2) > p:nth-child(7) {
         margin-left: 136px;
         margin-top: -157px;
         font-size: 11px;
     }
-    .Education>section>div:nth-child(2)>p:nth-child(8) {
+
+    .Education > section > div:nth-child(2) > p:nth-child(8) {
         margin-left: 136px;
         margin-top: 89px;
         font-size: 11px;
     }
 
-    .MyProjects>h1 {
+    .MyProjects > h1 {
         font-size: 35px;
     }
-    .my-works>div:nth-child(1) {
+
+    .my-works > div:nth-child(1) {
         display: none;
     }
-    .my-works>div:nth-child(2) {
+
+    .my-works > div:nth-child(2) {
         display: none;
     }
-    .my-works>div:nth-child(3) {
+
+    .my-works > div:nth-child(3) {
 
     }
-    .my-works>div:nth-child(4) {
+
+    .my-works > div:nth-child(4) {
         display: none;
     }
-    .my-works>div:nth-child(5) {
+
+    .my-works > div:nth-child(5) {
         display: none;
     }
-    .my-works>div:nth-child(3) {
+
+    .my-works > div:nth-child(3) {
         width: 250px;
         height: 200px;
         bottom: 127px;
         opacity: 59%;
     }
-    .my-works>h1 {
+
+    .my-works > h1 {
         top: 78px;
         font-size: 20px;
         color: mediumvioletred;
     }
-    .my-works>div:nth-child(6)>div {
+
+    .my-works > div:nth-child(6) > div {
         width: 20px;
         height: 20px;
         margin-left: 31px;
     }
-    .my-works>div:nth-child(6)>i {
+
+    .my-works > div:nth-child(6) > i {
         font-size: 28px;
     }
-    .my-works>div:nth-child(6)>i:first-of-type {
+
+    .my-works > div:nth-child(6) > i:first-of-type {
         right: 254px;
     }
-    .my-works>div:nth-child(6)>i {
+
+    .my-works > div:nth-child(6) > i {
         font-size: 22px;
         left: 0;
     }
-    .my-works>div:nth-child(6)>i:last-of-type {
+
+    .my-works > div:nth-child(6) > i:last-of-type {
         left: 281px;
     }
-    .my-works>div:nth-child(6) {
+
+    .my-works > div:nth-child(6) {
         bottom: 197px;
         left: -24px;
     }
-    .my-works>a:nth-child(7)>div {
+
+    .my-works > a:nth-child(7) > div {
         width: 180px;
         height: 54px;
         top: 420px;
         right: 69px;
     }
+
     .MyProjects {
         height: 90vh;
     }
-    .Contact>h1 {
+
+    .Contact > h1 {
         top: -191px;
         font-size: 35px;
     }
-    .Contact>section {
+
+    .Contact > section {
         width: 87%;
         height: 36%;
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-    .Contact>section>div {
+
+    .Contact > section > div {
         width: 100%;
         height: 89%;
         gap: 20px;
         left: 28px;
         bottom: 135px;
     }
-    .Contact>section>div>i {
+
+    .Contact > section > div > i {
         font-size: 63px;
         color: #5c5959;
         margin-left: 22px;
@@ -885,7 +944,8 @@
         position: relative;
         bottom: 17px;
     }
-    .Contact>section>div>h1 {
+
+    .Contact > section > div > h1 {
         margin-left: 108px;
         margin-top: 0;
         font-size: 19px;
@@ -893,7 +953,8 @@
         top: -72px;
         color: darkgray;
     }
-    .Contact>section>div>h1 {
+
+    .Contact > section > div > h1 {
         margin-left: 108px;
         margin-top: 0;
         font-size: 19px;
@@ -901,14 +962,16 @@
         top: -72px;
         color: darkgray;
     }
-    .Contact>section {
+
+    .Contact > section {
         width: 87%;
         height: 36%;
         gap: 20px;
         top: -114px;
         left: 22px;
     }
-    .Contact>section>div>h3 {
+
+    .Contact > section > div > h3 {
         color: #798392;
         margin-left: 0;
         margin-top: 0;
@@ -918,75 +981,71 @@
         font-size: 14px;
         bottom: 80px;
     }
-    .footer>h1 {
+
+    .footer > h1 {
         font-size: 35px;
     }
-    .footer>section:nth-child(2)>div>input {
+
+    .footer > section:nth-child(2) > div > input {
         width: 250px;
         height: 34px;
         font-size: 12px;
         left: -316px;
     }
-    .footer>section:nth-child(2)>div {
+
+    .footer > section:nth-child(2) > div {
         top: -21px;
         width: 754px;
         height: 37px;
     }
-    .footer>section:nth-child(2)>div {
+
+    .footer > section:nth-child(2) > div {
         top: -30px;
         width: 294px;
         height: 37px;
     }
-    .footer>section:nth-child(2)>div>input {
+
+    .footer > section:nth-child(2) > div > input {
         width: 220px;
         height: 35px;
         font-size: 12px;
         left: 71px;
     }
-    .footer>section:nth-child(2)>div>h3 {
+
+    .footer > section:nth-child(2) > div > h3 {
         margin-top: 10px;
         margin-left: 10px;
         font-size: 16px;
     }
-    .footer>section:nth-child(2)>div:nth-child(2) {
+
+    .footer > section:nth-child(2) > div:nth-child(2) {
         top: 23px;
     }
-    .footer>section:nth-child(2)>div:nth-child(3) {
+
+    .footer > section:nth-child(2) > div:nth-child(3) {
         top: 81px;
     }
 
-    .footer>section:nth-child(2)>div:nth-child(4)>textarea {
+    .footer > section:nth-child(2) > div:nth-child(4) > textarea {
         height: 199px;
         width: 290px;
     }
-    .footer>section:nth-child(2)>div:nth-child(4) {
+
+    .footer > section:nth-child(2) > div:nth-child(4) {
         top: 141px;
     }
+
     footer {
         width: 99vw;
         height: 99vh;
     }
+
     .send-btn {
         width: 218px;
         padding: 12px 34px;
         font-size: 23px;
         top: 386px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     /*header>div:nth-child(3)>nav>ul>{*/
     /*    display: none;*/
@@ -1023,6 +1082,5 @@
     /*    margin-top: 6px;*/
     /*    margin-bottom: 429px;*/
     /*}*/
-
 
 }
