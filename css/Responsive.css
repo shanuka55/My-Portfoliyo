@@ -731,6 +731,7 @@
     }
     .Education>h1{
         font-size: 35px;
+        top: -66px;
     }
     .Education>section>div>div:nth-child(1),.Education>section>div>div:nth-child(2),.Education>section>div>div:nth-child(3),.Education>section>div>div:nth-child(4) {
         display: none;
@@ -739,30 +740,70 @@
         width: 60px;
         height: 60px;
         margin-top: 44px;
-        margin-left: 52px;
+        margin-left: 26px;
     }
     .Education>section>div>div:nth-child(6) {
         width: 60px;
         height: 60px;
-        margin-top: 45px;
-        margin-left: 53px;
+        margin-top: 44px;
+        margin-left: 26px;
     }
     .Education>section>div>p:nth-child(7) {
         margin-left: 141px;
         margin-top: -156px;
     }
-    .Education>section>div>p:nth-child(8) {
-        margin-left: 141px;
-        margin-top: 75px;
-        font-size: 12px;
-    }
-    .Education>section>div {
-        width: 25%;
-        height: 62%;
+    /*.Education>section>div>p:nth-child(8) {*/
+    /*    margin-left: 141px;*/
+    /*    margin-top: 75px;*/
+    /*    font-size: 12px;*/
+    /*}*/
+    /*.Education>section>div {*/
+    /*    width: 25%;*/
+    /*    height: 62%;*/
+    /*    position: relative;*/
+    /*    left: 38px;*/
+    /*    top: -16px;*/
+    /*}*/
+    .Education>section>div:nth-child(1) {
+        width: 28%;
+        height: 59%;
         position: relative;
-        left: 38px;
-        top: -16px;
+        left: 18px;
+        top: -100px;
     }
+    .Education>section>div:nth-child(1)>p:nth-child(7) {
+        margin-left: 135px;
+        margin-top: -163px;
+        font-size: 11px;
+    }
+    .Education>section>div:nth-child(1)>p:nth-child(8) {
+        margin-left: 137px;
+        margin-top: 96px;
+        font-size: 11px;
+    }
+    .Education>section>div:nth-child(2) {
+        width: 28%;
+        height: 59%;
+        position: relative;
+        left: -344px;
+        top: 154px;
+    }
+    .Education>section>div:nth-child(2)>p:nth-child(7) {
+        margin-left: 136px;
+        margin-top: -157px;
+        font-size: 11px;
+    }
+    .Education>section>div:nth-child(2)>p:nth-child(8) {
+        margin-left: 136px;
+        margin-top: 89px;
+        font-size: 11px;
+    }
+
+    .MyProjects>h1 {
+        font-size: 35px;
+    }
+
+
 
 
 
