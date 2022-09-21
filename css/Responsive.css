@@ -1113,3 +1113,54 @@
 
 
 }
+@media all and (max-width: 320px) {
+
+    header > div:nth-child(5) {
+        top: -17px;
+        left: 162px;
+    }
+    header > div:nth-child(4) > p:nth-child(1) {
+        font-size: 16px;
+        margin-left: 22px;
+        margin-top: 929px;
+    }
+    header > div:nth-child(4) > p:nth-child(2) {
+        font-size: 46px;
+        margin-bottom: 462px;
+        margin-left: 8px;
+        color: darkgray;
+    }
+    .View-Work {
+        width: 150px;
+        margin-left: 186px;
+        padding: 8px 6px;
+        font-size: 10px;
+        top: 109%;
+        left: -35%;
+    }
+    .hire-btn {
+        width: 145px;
+        margin-left: 150px;
+        padding: 8px 6px;
+        font-size: 10px;
+        top: 101%;
+        left: -23%;
+    }
+    .AboutMe > h1 {
+        font-size: 30px;
+        top: 0;
+    }
+    .AboutMe > div:nth-child(2) {
+        top: 58px;
+        left: 23px;
+    }
+    .AboutMe > div:nth-child(3) {
+        width: 82vw;
+        height: 55vh;
+        right: 19px;
+    }
+
+
+
+
+}
