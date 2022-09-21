@@ -7,10 +7,38 @@
     <link rel="stylesheet" href="../Assets/css/bootstrap.css">
     <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1 minimum-scale=1 user-schaleble=no">
 
-    <link rel="stylesheet" href="../css/posSystem.css">
+<!--    <link rel="stylesheet" href="../css/posSystem.css">-->
     <link rel="stylesheet" href="../Assets/Font/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <style>
+        .navbar>div>a{
+            color: #4f5050;
+        }
+        .navbar>div>a{
+            margin-left: 40px;
+        }
+        .navbar>div>div{
+            position: absolute;
+            margin-left: 900px;
+        }
+        .navbar>div>div>form>button{
+            margin-left: 15px;
+        }
+
+        main>section>section{
+            height: 250px;
+        }
+        .col-2{
+            position: relative;
+            left: 80px;
+        }
+        .row{
+            position: relative;
+            top: 20px;
+        }
+        main>section {
+            background-color: #565e64;
+        }
 
     </style>
 
@@ -18,7 +46,7 @@
 </head>
 
 <body>
-<script src="Assets/js/bootstrap.js">
+<script src="../Assets/js/bootstrap.js">
 </script>
 <!--Nav Bar started-->
 <nav class="navbar navbar-expand-lg bg-light">
@@ -62,13 +90,13 @@
 </nav>
 <!--Nav Bar End-->
 <main class="container-fluid">
-    <section class="p-3 mb-2 bg-dark text-white">
+    <section class="p-3 mb-2 ">
         <h2><i class="fa-solid fa-users"></i>Customer</h2>
 
         <section class="row">
 
             <section class="col-8">
-                <div class="p-1 mb-2 bg-light text-dark ">
+                <div class="p-1 mb-2 bg-dark text-light ">
                     <h3> &nbsp;&nbsp;Serach Customer&nbsp;&nbsp;<i class="fa-solid fa-magnifying-glass"></i></h3>
                 </div>
 <!--                Serch Bar started-->
@@ -90,16 +118,24 @@
                     </ul>
                 </div>
 <!--                Groop btn ends-->
+                <br>
+                <br>
+                <button type="button" class="btn btn-danger"> Delete</button>
+                <button type="button" class="btn btn-light"> Deatails</button>
+                <button type="button" class="btn btn-light"> Clear</button>
 
             </section>
-            <section class="col-4">
-
+            <section class="col-2">
+                <button type="button" class="btn btn-success">Add New Customer</button><br><br>
+                <button type="button" class="btn btn-success">View All &nbsp;&nbsp;Customer</button>
             </section>
 
         </section>
-        <section class="row">
-
-        </section>
+<!--        second row start-->
+<!--        <section class="row">-->
+<!--            -->
+<!--        </section>-->
+<!--        Second row End-->
         <section class="row">
 
         </section>
