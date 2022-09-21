@@ -12,3 +12,7 @@
 .navbar>div>div>form>button{
    margin-left: 15px;
 }
+body>div{
+    width: 98.9vw;
+    height: 100vh;
+}
