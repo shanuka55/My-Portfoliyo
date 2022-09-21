@@ -555,13 +555,19 @@
     }
 
     header > div:nth-child(4) > p:nth-child(1) {
-        font-size: 17px;
-        margin-left: 12px;
+        font-size: 21px;
+        margin-left: 10px;
+        top: 210px;
+        position: relative;
     }
 
     header > div:nth-child(4) > p:nth-child(2) {
-        font-size: 33px;
-        margin-bottom: 447px;
+        font-size: 32px;
+        margin-bottom: 0;
+        margin-top: 2px;
+        position: relative;
+        top: 218px;
+        color: darkgray;
     }
 
     header > div:nth-child(5) > ul > li {
@@ -573,9 +579,10 @@
     }
 
     header > div:nth-child(5) {
-        top: 107px;
-        left: 203px;
+        top: 3px;
+        left: 225px;
     }
+
 
     .hover-fx {
         margin: 24px;
