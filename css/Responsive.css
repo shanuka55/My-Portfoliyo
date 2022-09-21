@@ -1167,6 +1167,57 @@
         right: 19px;
     }
 
+    header > div:nth-child(4) > p:nth-child(1) {
+        font-size: 16px;
+        margin-top: 487px;
+    }
+    .MyServices>h1{
+        font-size: 30px;
+    }
+    .MyServices > div:nth-child(2) {
+        left: 50px;
+    }
+    .MySkills>h1{
+        font-size: 30px;
+    }
+    .MySkills > div:nth-child(2) {
+        font-size: 9px;
+        right: 204px;
+    }
+    .MySkills > section:nth-child(3) {
+        width: 90px;
+        height: 63px;
+        top: 133px;
+        left: 0;
+        right: 202px;
+    }
+    .MySkills > div:nth-child(4) {
+        font-size: 9px;
+        top: 100px;
+        left: 3px;
+    }
+    .MySkills > section:nth-child(5) {
+        width: 90px;
+        height: 63px;
+        top: 133px;
+        left: 4px;
+    }
+    .MySkills > div:nth-child(6) {
+        font-size: 9px;
+        top: 100px;
+        left: 211px;
+    }
+    .MySkills > section:nth-child(7) {
+        width: 90px;
+        height: 63px;
+        top: 133px;
+        left: 209px;
+    }
+    .Education > h1 {
+        font-size: 30px;
+        top: 0;
+    }
+
 
 
 
