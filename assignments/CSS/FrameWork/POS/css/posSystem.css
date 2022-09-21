@@ -12,7 +12,19 @@
 .navbar>div>div>form>button{
    margin-left: 15px;
 }
-body>div{
-    width: 98.9vw;
+main>section:first-of-type{
+    /*width: 98.9vw;*/
     height: 100vh;
 }
+main>section>section{
+    border: 1px solid red;
+    height: 200px;
+}
+main>section>section>section{
+    border: 1px solid blue;
+    /*height: 200px;*/
+}
+/*main>section>section:nth-child(1)>div{*/
+/*    bg-light*/
+/*}*/
+
