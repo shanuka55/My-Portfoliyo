@@ -89,17 +89,19 @@
     </div>
 </nav>
 <!--Nav Bar End-->
-<main class="container-fluid">
-    <section class="row" style="border: 1px solid red" >
+<main class="container-fluid gap-4" >
+    <section class="row" >
 
 <!--        income details started-->
-        <section class="col-4" style="border: 1px solid blue">
+        <section class="col-4" >
+
+
             <div class="card">
                 <div class="card-header">
                     <h4>Income Details</h4>
                 </div>
-                <div class="card-body ">
-                    <section class="row" style="border: 1px solid purple">
+                <div class="card-body " >
+                    <section class="row">
                         <!--                    Order Id-->
                         <div class="col">
 
@@ -122,7 +124,7 @@
                         <!--                    Date End-->
 
                     </section>
-                    <section class="row" style="border: 1px solid purple">
+                    <section class="row">
                         <!--                    Customer Id satrt-->
                         <div class="col">
 
@@ -147,7 +149,7 @@
                         </div>
 
                     </section>
-                    <section class="row" style="border: 1px solid purple">
+                    <section class="row" >
                         <div class="col">
                             <!--                            contact Number-->
                             <div class="mb-2">
@@ -168,8 +170,6 @@
                         </div>
                     </section>
 
-
-
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
@@ -177,14 +177,75 @@
 <!--        income details End-->
 
 <!--        item select start-->
-        <section class="col-4" style="border: 1px solid blue">
+        <section class="col-4">
                 <div class="card">
                     <div class="card-header">
-                        <h2>Select Item</h2>
+                        <h4>Select Item</h4>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <div class="card-body " >
+                        <section class="row">
+                            <!--                    Item Code-->
+                            <div class="col">
+
+                                <div class="mb-2">
+                                    <label for="formGroupExampleInput" class="form-label">Order Id  :</label>
+
+                                    <select id="Item-Code" class="form-select">-->
+                                         <option selected>Choose...</option>
+                                         <option>...</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <!--                    Order Id End-->
+                            <!--                    Description start-->
+                            <div class="col">
+
+                                <div class="mb-2">
+                                    <label for="formGroupExampleInput" class="form-label">Description  :</label>
+                                    <input type="text" class="form-control" id="Description" placeholder="   ">
+                                </div>
+
+                            </div>
+                            <!--                    Description End-->
+
+                        </section>
+                        <section class="row">
+                            <!--                    Unit Price satrt-->
+                            <div class="col">
+
+                                <div class="mb-2">
+                                    <label for="inputState" class="form-label">Unit Price</label>
+                                    <input type="text" class="form-control" id="Unit-Price" placeholder="  ">
+<!--                                    <select id="inputState" class="form-select">-->
+<!--                                        <option selected>Choose...</option>-->
+<!--                                        <option>...</option>-->
+<!--                                    </select>-->
+                                </div>
+                                <!--                    Unit Price End-->
+
+                            </div>
+                            <div class="col">
+                                <!--                             Qty on hand start-->
+                                <div class="mb-2">
+                                    <label for="formGroupExampleInput" class="form-label">Name  :</label>
+                                    <input type="text" class="form-control" id="Qty-on-hand" placeholder="  ">
+                                </div>
+                                <!--                            End -->
+
+                            </div>
+
+                        </section>
+                        <section class="row" >
+
+                                <!--                            Order QTY-->
+                                <div class="mb-2">
+                                    <label for="formGroupExampleInput" class="form-label">Order QTY  :</label>
+                                    <input type="text" class="form-control" id="qty" placeholder=" ">
+                                </div>
+                                <!--                            End Address-->
+                        </section>
+
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
@@ -192,7 +253,7 @@
 <!--        item select end-->
 
 <!--        bil start-->
-        <section class="col-4" style="border: 1px solid blue">
+        <section class="col-4">
                     <div class="card">
                         <div class="card-header">
                             Printed bil
