@@ -125,66 +125,140 @@
                 <button type="button" class="btn btn-light"> Clear <i class="fa-solid fa-eraser"></i></button>
 
             </section>
-            <section class="col-2">
-                <button type="button" class="btn btn-success">Add New Customer</button><br><br>
-                <button type="button" class="btn btn-success">View All &nbsp;&nbsp;Customer</button>
+            <section class="col-3 ">
+<!--                Time and date started-->
+                <div class="card text-center " >
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="true" href="#">Time</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Date</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Show time </h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+<!--                <button type="button" class="btn btn-success">Add New Customer</button><br><br>-->
+<!--                <button type="button" class="btn btn-success">View All &nbsp;&nbsp;Customer</button>-->
             </section>
 
         </section>
-<!--        second row start-->
-<!--        <section class="row">-->
-<!--            -->
-<!--        </section>-->
-<!--        Second row End-->
-        <section class="row" >
-            <div class="col-7 bg-light bg-opacity-50  " style="left: 20px ">
-                <table class="table caption-top">
-                    <caption>List of users</caption>
-                    <thead>
-                    <tr>
-                        <th scope="col">CID</th>
-                        <th scope="col">Customer Name</th>
-                        <th scope="col">Age</th>
-                        <th scope="col">TP</th>
-                        <th scope="col">Salary</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">C001</th>
-                        <td>Nimal</td>
-                        <td>21</td>
-                        <td>077-5656963</td>
-                        <td>25000.00</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">C002</th>
-                        <td>Sumith</td>
-                        <td>22</td>
-                        <td>078-5252123</td>
-                        <td>35000.00</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">C003</th>
-                        <td>Supun</td>
-                        <td>23</td>
-                        <td>075-8965852</td>
-                        <td>25000.00</td>
-                    </tr>
-                    </tbody>
-                </table>
+
+        <div class="d-flex gap-3">
+<!--            table content-->
+            <div class="col-6">
+                <div class="col-12 bg-light bg-opacity-50 d-flex">
+                    <table class="table caption-top">
+                        <caption>List of users</caption>
+                        <thead>
+                        <tr>
+                            <th scope="col">CID</th>
+                            <th scope="col">Customer Name</th>
+                                                <th scope="col">Age</th>
+                            <th scope="col">TP</th>
+                            <th scope="col">Salary</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">C001</th>
+                            <td>Nimal</td>
+                            <td>21</td>
+                            <td>077-5656963</td>
+                            <td>25000.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">C002</th>
+                            <td>Sumith</td>
+                            <td>22</td>
+                            <td>078-5252123</td>
+                            <td>35000.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">C003</th>
+                            <td>Supun</td>
+                            <td>23</td>
+                            <td>075-8965852</td>
+                            <td>25000.00</td>
+                        </tr>
+                        <tr>
+                            <th>C00</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>C00</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <!--                second row start-->
-            <section class="row">
-                <br>
-                <br>
-                <br>
-            </section>
-            <!--                Second row End-->
+
+            <div class="col-6 d-flex">
+
+                <div class="col-12 d-flex gap-3" >
+                    <div class="card w-75 h-85">
+                        <div class="card-body">
+                            <h5 class="card-title">Add New Customer</h5>
+                            <!--                       Input Customer id started-->
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" id="Customer-ID">Customer ID&nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp; </span>
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                            <!--                        End  Customer id-->
+                            <!--                       Input Customer Name started-->
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" id="Customer-Name">Customer Name&nbsp; &nbsp; </span>
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                            <!--                        End Customer Name-->
+                            <!--                       Input Customer Address started-->
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" id="Customer-Address">Customer Address</span>
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                            <!--                       End Customer Address-->
+                            <!--                       Input Customer Contact started-->
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" id="Customer-Contact">Customer Contact</span>
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                            <!--                       End Customer Contact-->
+                        </div>
+                    </div>
+
+                    <div class="col-3 ms-auto my-5">
+                        <button type="button" class="btn btn-light btn-lg"> Save&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-bookmark"></i></button><br><br>
+                        <button type="button" class="btn btn-light btn-lg"> Renew <i class="fa-solid fa-retweet"></i></button><br><br>
+                        <button type="button" class="btn btn-danger btn-lg" >Close &nbsp;&nbsp;&nbsp;<i class="fa-sharp fa-solid fa-circle-xmark"></i></button><br><br>
+                    </div>
+
+                </div>
+                <!--                second row start-->
+                <!--            <section class="row">-->
+                <!--                <br>-->
+                <!--                <br>-->
+                <!--                <br>-->
+                <!--            </section>-->
+                <!--                Second row End-->
+
+            </div>
+            <!--        update delete section-->
 
 
-        </section>
-
+        </div>
+<!--        table content-->
     </section>
 </main>
 
