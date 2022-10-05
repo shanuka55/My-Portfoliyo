@@ -39,19 +39,38 @@
 
 
 }
-.my-works>div:nth-child(1)>div>div{
+.my-works>div:nth-child(1)>div>div:nth-child(1){
     width: 100%;
     height: 40%;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     position: relative;
     margin-left: -43px;
     border-radius: 15px;
 }
 .my-works>div:nth-child(1)>div:hover{
-    background-color: #494848;
+    background-color: #013739;
 }
-.my-works>div:nth-child(1)>div>div>img{
+.my-works>div:nth-child(1)>div>div:nth-child(1)>img{
     width: 100%;
     height: 100%;
     border-radius: 15px;
+}
+
+.my-works>div:nth-child(1)>div>div:nth-child(2){
+    width: 80px;
+    height: 80px;
+    /*border: 1px solid red;*/
+    transform: rotate(45deg);
+    border-radius: 25px;
+    top: -8%;
+    left: 30px;
+    position: relative;
+    background-color: #1b1b1f;
+}
+.my-works>div:nth-child(1)>div>div:nth-child(2)>i{
+    color: orangered;
+    font-size: 45px;
+    transform: rotate(-45deg);
+    margin: 15px;
+
 }
