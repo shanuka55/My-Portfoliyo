@@ -65,7 +65,7 @@
     top: -8%;
     left: 30px;
     position: relative;
-    background-color: #1b1b1f;
+    background-color: #aaa8a8;
 }
 .my-works>div:nth-child(1)>div>div:nth-child(2)>i{
     color: orangered;
@@ -73,4 +73,21 @@
     transform: rotate(-45deg);
     margin: 15px;
 
+}
+.my-works>div:nth-child(1)>div>h2{
+    font-size: 30px;
+    color: #909090;
+    margin-top: -10px;
+    margin-left: 100px;
+    font-family: 'Alata', sans-serif;
+}
+.my-works>div:nth-child(1)>div>a>i{
+    font-size: 100px;
+    margin-left: 140px;
+    color: orangered;
+    cursor: pointer;
+    transition: 1s;
+}
+.my-works>div:nth-child(1)>div>a>i:hover{
+    color: white;
 }
