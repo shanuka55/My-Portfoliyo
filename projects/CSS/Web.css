@@ -31,14 +31,12 @@ body>section>div>video {
     height: 100%;
 }
 
-body>section>div>div{
+body>section>div>img {
     width: 100%;
     height: 100%;
-    background-color: rgba(106, 18, 18, 0.68);
-    border-radius: 10%;
+}
 
-}
-body>section>div>div>h2{
-    color: black;
-    margin: 0;
-}
+
+
+
+
