@@ -1,0 +1,9 @@
+body{
+    background-image: linear-gradient(to right,#00416A,#E4E5E6);
+}
+
+body>h1{
+    font-size: 60px;
+    color: white;
+    margin-left: 40%;
+}
