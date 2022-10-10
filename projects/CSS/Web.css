@@ -48,11 +48,11 @@ body>section>div>video {
 
 .h1{
     position: relative;
-    bottom: 30px;
+    bottom: 20px;
     left: 30px;
     transition: 1s;
     color: rgba(10, 10, 10, 0.49);
-    font-size: 25px;
+    font-size: 20px;
     z-index: 5;
 }
 
