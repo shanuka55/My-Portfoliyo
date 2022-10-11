@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="Assets/Font/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
+
 </head>
 <body>
 <!--nav-->
@@ -26,17 +27,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                        <button class="btn btn-outline-success" type="submit" id="HomeBtn">HOME</button>
+<!--                        <a class="nav-link active" aria-current="page" >HOME</a>-->
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-outline-success" type="submit" id="OrdersPage">ORDERS</button>
+                        <button class="btn btn-outline-success" type="submit" id="OrdersBtn">ORDERS</button>
 <!--                        <a class="nav-link active" aria-current="page" id="OrdersPage">ORDERS </a>-->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" id="ItemPage"> ITEMS </a>
+                        <button class="btn btn-outline-success" type="submit" id="ItemBtn">ITEMS</button>
+<!--                        <a class="nav-link active" aria-current="page" id="ItemPage"> ITEMS </a>-->
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-outline-success" type="submit" id="CustomerPage">CUSTOMER</button>
+                        <button class="btn btn-outline-success" type="submit" id="CustomerBtn">CUSTOMER</button>
 <!--                        <a class="nav-link active" aria-current="page" id="CustomerPage"> CUSTOMER </a>-->
                     </li>
                     <li class="nav-item dropdown">
@@ -55,15 +58,15 @@
                     </li>
                 </ul>
                 <form class="d-flex" >
-                    <button class="btn btn-outline-success" type="submit">Sign Up</button>
-                    <button class="btn btn-outline-success" type="submit">Log Out</button>
+<!--                    <button class="btn btn-outline-success" type="submit">Sign Up</button>-->
+<!--                    <button class="btn btn-outline-success" type="submit">Log Out</button>-->
                 </form>
             </div>
         </div>
     </nav>
 </section>
 
-<!--dash board-->
+            <!--dash board-->
 <section id="DashboardSection">
     <main class="container-fluid" id="dashboardMain">
         <section class=" p-3" id="dashboardSection1">
@@ -101,9 +104,11 @@
 
     </main>
 </section>
-<!--dash board end-->
-<div style="height: 50px"></div>
-<!--Customer-->
+            <!--dash board end-->
+
+<!--<div style="height: 50px"></div>-->
+
+            <!--Customer-->
 <section id="CustomerSection">
     <main class="container-fluid">
         <section class="p-3 mb-2 " id="section1">
@@ -278,9 +283,11 @@
         </section>
     </main>
 </section>
-<!--Customer End-->
+            <!--Customer End-->
+
 <div style="height: 50px"></div>
-<!--item-->
+
+            <!--item-->
 <section id="ItemSection">
     <main class="container-fluid">
         <section class="p-3 mb-2 ">
@@ -392,22 +399,22 @@
                                 <h5 class="card-title">Add New Item</h5>
 
                                 <div class="input-group input-group-sm mb-3">
-                                    <span class="input-group-text" id="Customer-ID">Item Code&nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp; </span>
+                                    <span class="input-group-text" id="ItemCode">Item Code&nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp; </span>
                                     <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                                 </div>
 
                                 <div class="input-group input-group-sm mb-3">
-                                    <span class="input-group-text" id="Customer-Name">Item Name&nbsp; &nbsp; </span>
+                                    <span class="input-group-text" id="Item-Name">Item Name&nbsp; &nbsp; </span>
                                     <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                                 </div>
 
                                 <div class="input-group input-group-sm mb-3">
-                                    <span class="input-group-text" id="Customer-Address">Qty </span>
+                                    <span class="input-group-text" id="Item-Qty">Qty </span>
                                     <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                                 </div>
 
                                 <div class="input-group input-group-sm mb-3">
-                                    <span class="input-group-text" id="Customer-Contact"> Price</span>
+                                    <span class="input-group-text" id="Item-Price"> Price</span>
                                     <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                                 </div>
 
@@ -437,10 +444,12 @@
         </section>
     </main>
 </section>
-<!--item End-->
+        <!--item End-->
+
 <div style="height: 50px"></div>
-<!--Order-->
-<section id="">
+
+            <!--Order-->
+<section id="OrderSection">
     <main class="container-fluid" style="background-color: #565e64; height: 65vh;" >
         <section class="row " id="OrderSection2">
 
@@ -666,7 +675,7 @@
         </section>
     </main>
 </section>
-<!--Order End-->
+            <!--Order End-->
 
 
 <script src="Assets/js/bootstrap.js"></script>
@@ -675,9 +684,11 @@
 
 <script>
 
-    $("#CustomerPage").on('click',function () {
+    $("#CustomerBtn").on('click',function () {
 
         $("#DashboardSection").css('display','none');
+        $("#ItemSection").css('display','none');
+        $("#OrderSection").css('display','none');
 
 
     });

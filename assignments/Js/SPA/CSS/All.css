@@ -74,3 +74,12 @@ main>section>div>div>h2{
     margin-left: -181px;
 
 }
+#ItemSection{
+    display: none;
+}
+#CustomerSection{
+    display: none;
+}
+#OrderSection{
+    display: none;
+}
