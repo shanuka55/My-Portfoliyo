@@ -20,26 +20,26 @@
 <section>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#" ><i class="bi bi-snow2"></i> Shanuka POS System</a>
+            <a class="navbar-brand" href="#" ><i class="bi bi-snow2" style="color: #0f5132"></i> POS SYSTEM</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <button class="btn btn-outline-success" type="submit" id="HomeBtn">HOME</button>
+                        <button class="btn btn-outline-success" type="submit" id="HomeBtn">HOME</button>&nbsp;
 <!--                        <a class="nav-link active" aria-current="page" >HOME</a>-->
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-outline-success" type="submit" id="OrdersBtn">ORDERS</button>
+                        <button class="btn btn-outline-success" type="submit" id="OrderBtn">ORDERS</button>&nbsp;
 <!--                        <a class="nav-link active" aria-current="page" id="OrdersPage">ORDERS </a>-->
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-outline-success" type="submit" id="ItemBtn">ITEMS</button>
+                        <button class="btn btn-outline-success" type="submit" id="ItemBtn">ITEMS</button>&nbsp;
 <!--                        <a class="nav-link active" aria-current="page" id="ItemPage"> ITEMS </a>-->
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-outline-success" type="submit" id="CustomerBtn">CUSTOMER</button>
+                        <button class="btn btn-outline-success" type="submit" id="CustomerBtn">CUSTOMER</button>&nbsp;
 <!--                        <a class="nav-link active" aria-current="page" id="CustomerPage"> CUSTOMER </a>-->
                     </li>
                     <li class="nav-item dropdown">
@@ -285,7 +285,8 @@
 </section>
             <!--Customer End-->
 
-<div style="height: 50px"></div>
+<!--<div style="height: 50px"></div>-->
+
 
             <!--item-->
 <section id="ItemSection">
@@ -394,7 +395,7 @@
                 <div class="col-6 d-flex">
 
                     <div class="col-12 d-flex gap-3" >
-                        <div class="card w-75 h-85">
+                        <div class="card w-75 " style="height: 83%">
                             <div class="card-body">
                                 <h5 class="card-title">Add New Item</h5>
 
@@ -446,7 +447,7 @@
 </section>
         <!--item End-->
 
-<div style="height: 50px"></div>
+<!--<div style="height: 50px"></div>-->
 
             <!--Order-->
 <section id="OrderSection">
@@ -690,6 +691,37 @@
         $("#ItemSection").css('display','none');
         $("#OrderSection").css('display','none');
 
+        $("#CustomerSection").css('display','inline');
+
+    });
+
+    $("#ItemBtn").on('click',function () {
+
+        $("#DashboardSection").css('display','none');
+        $("#CustomerSection").css('display','none');
+        $("#OrderSection").css('display','none');
+
+        $("#ItemSection").css('display','inline');
+
+    });
+
+    $("#OrderBtn").on('click',function () {
+
+        $("#DashboardSection").css('display','none');
+        $("#CustomerSection").css('display','none');
+        $("#ItemSection").css('display','none');
+
+        $("#OrderSection").css('display','inline');
+
+    });
+
+    $("#HomeBtn").on('click',function () {
+
+        $("#OrderSection").css('display','none');
+        $("#CustomerSection").css('display','none');
+        $("#ItemSection").css('display','none');
+
+        $("#DashboardSection").css('display','inline');
 
     });
 
