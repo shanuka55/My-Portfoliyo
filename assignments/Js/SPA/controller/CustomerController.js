@@ -1,4 +1,6 @@
 
+var customer=[];
+
 $("#CustomerBtn").on('click',function () {
     $("#SearchFieldID").focus();
 });
