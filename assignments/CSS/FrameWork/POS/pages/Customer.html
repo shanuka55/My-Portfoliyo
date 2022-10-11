@@ -25,18 +25,25 @@
             margin-left: 15px;
         }
 
-        main>section>section{
+        /*main>section>section{*/
+        /*    height: 250px;*/
+        /*}*/
+
+        /*.col-2{*/
+        /*    position: relative;*/
+        /*    left: 80px;*/
+        /*}*/
+        /*.row{*/
+        /*    position: relative;*/
+        /*    top: 20px;*/
+        /*}*/
+        /*main>section {*/
+        /*    background-color: #565e64;*/
+        /*}*/
+        #section2{
             height: 250px;
         }
-        .col-2{
-            position: relative;
-            left: 80px;
-        }
-        .row{
-            position: relative;
-            top: 20px;
-        }
-        main>section {
+        #section1{
             background-color: #565e64;
         }
 
@@ -90,10 +97,10 @@
 </nav>
 <!--Nav Bar End-->
 <main class="container-fluid">
-    <section class="p-3 mb-2 ">
+    <section class="p-3 mb-2 " id="section1">
         <h2><i class="fa-solid fa-users"></i>Customer</h2>
 
-        <section class="row">
+        <section class="row" id="section2">
 
             <section class="col-8">
                 <div class="p-1 mb-2 bg-dark text-light bg-opacity-50">
@@ -239,9 +246,9 @@
                     </div>
 
                     <div class="col-3 ms-auto my-5">
-                        <button type="button" class="btn btn-light btn-lg"> Save&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-bookmark"></i></button><br><br>
-                        <button type="button" class="btn btn-light btn-lg"> Renew <i class="fa-solid fa-retweet"></i></button><br><br>
-                        <button type="button" class="btn btn-danger btn-lg" >Close &nbsp;&nbsp;&nbsp;<i class="fa-sharp fa-solid fa-circle-xmark"></i></button><br><br>
+                        <button type="button" class="btn btn-light btn-lg" id="saveCustomer"> Save&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-bookmark"></i></button><br><br>
+                        <button type="button" class="btn btn-light btn-lg" id="Update"> Renew <i class="fa-solid fa-retweet"></i></button><br><br>
+                        <button type="button" class="btn btn-danger btn-lg" id="Close">Close &nbsp;&nbsp;&nbsp;<i class="fa-sharp fa-solid fa-circle-xmark"></i></button><br><br>
                     </div>
 
                 </div>
@@ -262,7 +269,34 @@
     </section>
 </main>
 
+<script src="../Assets/JQ/jquery-3.6.1.min.js"></script>
+<script>
+$("#saveCustomer").click(function () {
+   // alert("saved");
+
+    //Select all the four text fields and then get their typed values
+    let customerID = $("#Customer-ID").val();
+    let customerName = $("#Customer-Name").val();
+    let customerAddress = $("#Customer-Address").val();
+    let customerContact = $("#Customer-Contact").val();
+
+    //alert(customerID+""+ customerName+""+ customerAddress+""+ customerContact);
+
+    var customerObject = {
+        id: customerID,
+        name: customerName,
+        address: customerAddress,
+        contact: customerContact
+    }
+
+    console.log(customerObject);
 
 
+
+});
+
+
+
+</script>
 </body>
 </html>

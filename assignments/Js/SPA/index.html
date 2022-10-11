@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SPA</title>
+    <link href="CSS/All.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="Assets/normalize.css">
+    <link rel="stylesheet" href="Assets/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1 minimum-scale=1 user-schaleble=no">
+
+    <!--    <link rel="stylesheet" href="css/posSystem.css">-->
+    <link rel="stylesheet" href="Assets/Font/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+<!--nav-->
+<section>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" ><i class="bi bi-snow2"></i> Shanuka POS System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-success" type="submit" id="OrdersPage">ORDERS</button>
+<!--                        <a class="nav-link active" aria-current="page" id="OrdersPage">ORDERS </a>-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" id="ItemPage"> ITEMS </a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-success" type="submit" id="CustomerPage">CUSTOMER</button>
+<!--                        <a class="nav-link active" aria-current="page" id="CustomerPage"> CUSTOMER </a>-->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            OTHERS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" >
+                    <button class="btn btn-outline-success" type="submit">Sign Up</button>
+                    <button class="btn btn-outline-success" type="submit">Log Out</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<!--dash board-->
+<section id="DashboardSection">
+    <main class="container-fluid" id="dashboardMain">
+        <section class=" p-3" id="dashboardSection1">
+            <h2 id="dashboardH2">DashBoard</h2>
+
+            <!--        Total Customers,items,orders start-->
+            <br>
+
+            <div class="card text-bg-secondary mb-3" style="max-width: 40rem;">
+                <div class="card-body">
+                    <h1 class="card-header"><i class="fa-solid fa-users"></i> Total Customers </h1>
+                    <h2 class="card-title">1265</h2>
+                </div>
+            </div>
+
+            <div class="card text-bg-success mb-3" style="max-width: 40rem;">
+                <div class="card-body">
+                    <h1 class="card-header"><i class="fa-solid fa-briefcase"></i> Total Products  </h1>
+                    <h2 class="card-title">754</h2>
+                </div>
+            </div>
+
+
+            <div class="card text-bg-primary mb-3" style="max-width: 40rem;">
+                <div class="card-body">
+                    <h1 class="card-header"><i class="fa-solid fa-box"></i> Today Total Orders </h1>
+                    <h2 class="card-title" > 170</h2>
+                </div>
+            </div>
+        </section>
+        <!--    Total Customers,items,orders end-->
+        <section>
+
+        </section>
+
+    </main>
+</section>
+<!--dash board end-->
+<div style="height: 50px"></div>
+<!--Customer-->
+<section id="CustomerSection">
+    <main class="container-fluid">
+        <section class="p-3 mb-2 " id="section1">
+            <h2><i class="fa-solid fa-users"></i>Customer</h2>
+
+            <section class="row" id="section2">
+
+                <section class="col-8">
+                    <div class="p-1 mb-2 bg-dark text-light bg-opacity-50">
+                        <h3> &nbsp;&nbsp;Serach Customer&nbsp;&nbsp;<i class="fa-solid fa-magnifying-glass"></i></h3>
+                    </div>
+                    <!--                Serch Bar started-->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Input Name / NIC /TP Here" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+
+                    </form>
+                    <!--                serch bar end-->
+                    <br>
+                    <!--                Groop btn started-->
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary dropdown-toggle btn-light" data-bs-toggle="dropdown" aria-expanded="false">
+                            Name
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                        </ul>
+                    </div>
+                    <!--                Groop btn ends-->
+                    <br>
+                    <br>
+                    <button type="button" class="btn btn-danger " > Delete <i class="fa-solid fa-trash-can"></i></button>
+                    <button type="button" class="btn btn-light"> Deatails <i class="fa-solid fa-circle-info"></i></button>
+                    <button type="button" class="btn btn-light"> Clear <i class="fa-solid fa-eraser"></i></button>
+
+                </section>
+                <section class="col-3 ">
+                    <!--                Time and date started-->
+                    <div class="card text-center " >
+                        <div class="card-header">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="true" href="#">Time</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Date</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Show time </h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                    <!--                <button type="button" class="btn btn-success">Add New Customer</button><br><br>-->
+                    <!--                <button type="button" class="btn btn-success">View All &nbsp;&nbsp;Customer</button>-->
+                </section>
+
+            </section>
+
+            <div class="d-flex gap-3">
+                <!--            table content-->
+                <div class="col-6">
+                    <div class="col-12 bg-light bg-opacity-50 d-flex">
+                        <table class="table caption-top">
+                            <caption>List of users</caption>
+                            <thead>
+                            <tr>
+                                <th scope="col">CID</th>
+                                <th scope="col">Customer Name</th>
+                                <th scope="col">Age</th>
+                                <th scope="col">TP</th>
+                                <th scope="col">Salary</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">C001</th>
+                                <td>Nimal</td>
+                                <td>21</td>
+                                <td>077-5656963</td>
+                                <td>25000.00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">C002</th>
+                                <td>Sumith</td>
+                                <td>22</td>
+                                <td>078-5252123</td>
+                                <td>35000.00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">C003</th>
+                                <td>Supun</td>
+                                <td>23</td>
+                                <td>075-8965852</td>
+                                <td>25000.00</td>
+                            </tr>
+                            <tr>
+                                <th>C00</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <th>C00</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-6 d-flex">
+
+                    <div class="col-12 d-flex gap-3" >
+                        <div class="card w-75 h-85">
+                            <div class="card-body">
+                                <h5 class="card-title">Add New Customer</h5>
+                                <!--                       Input Customer id started-->
+                                <div class="input-group input-group-sm mb-3">
+                                    <span class="input-group-text" id="Customer-ID">Customer ID&nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp; </span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                </div>
+                                <!--                        End  Customer id-->
+                                <!--                       Input Customer Name started-->
+                                <div class="input-group input-group-sm mb-3">
+                                    <span class="input-group-text" id="Customer-Name">Customer Name&nbsp; &nbsp; </span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                </div>
+                                <!--                        End Customer Name-->
+                                <!--                       Input Customer Address started-->
+                                <div class="input-group input-group-sm mb-3">
+                                    <span class="input-group-text" id="Customer-Address">Customer Address</span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                </div>
+                                <!--                       End Customer Address-->
+                                <!--                       Input Customer Contact started-->
+                                <div class="input-group input-group-sm mb-3">
+                                    <span class="input-group-text" id="Customer-Contact">Customer Contact</span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                </div>
+                                <!--                       End Customer Contact-->
+                            </div>
+                        </div>
+
+                        <div class="col-3 ms-auto my-5">
+                            <button type="button" class="btn btn-light btn-lg" id="saveCustomer"> Save&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-bookmark"></i></button><br><br>
+                            <button type="button" class="btn btn-light btn-lg" id="Update"> Renew <i class="fa-solid fa-retweet"></i></button><br><br>
+                            <button type="button" class="btn btn-danger btn-lg" id="Close">Close &nbsp;&nbsp;&nbsp;<i class="fa-sharp fa-solid fa-circle-xmark"></i></button><br><br>
+                        </div>
+
+                    </div>
+                    <!--                second row start-->
+                    <!--            <section class="row">-->
+                    <!--                <br>-->
+                    <!--                <br>-->
+                    <!--                <br>-->
+                    <!--            </section>-->
+                    <!--                Second row End-->
+
+                </div>
+                <!--        update delete section-->
+
+
+            </div>
+            <!--        table content-->
+        </section>
+    </main>
+</section>
+<!--Customer End-->
+<div style="height: 50px"></div>
+<!--item-->
+<section id="ItemSection">
+    <main class="container-fluid">
+        <section class="p-3 mb-2 ">
+            <h2><i class="fa-solid fa-users"></i>Items</h2>
+
+            <section class="row">
+
+                <section class="col-8">
+                    <div class="p-1 mb-2 bg-dark text-light bg-opacity-50">
+                        <h3> &nbsp;&nbsp;Serach Items&nbsp;&nbsp;<i class="fa-solid fa-magnifying-glass"></i></h3>
+                    </div>
+                    <!--                Serch Bar started-->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Input Name / NIC /TP Here" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+
+                    </form>
+                    <!--                serch bar end-->
+                    <br>
+                    <!--                Groop btn started-->
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary dropdown-toggle btn-light" data-bs-toggle="dropdown" aria-expanded="false">
+                            Name
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                        </ul>
+                    </div>
+                    <!--                Groop btn ends-->
+                    <br>
+                    <br>
+                    <button type="button" class="btn btn-danger " > Delete <i class="fa-solid fa-trash-can"></i></button>
+                    <button type="button" class="btn btn-light"> Deatails <i class="fa-solid fa-circle-info"></i></button>
+                    <button type="button" class="btn btn-light"> Clear <i class="fa-solid fa-eraser"></i></button>
+
+                </section>
+                <section class="col-3 ">
+                    <!--                Time and date started-->
+                    <div class="card text-center " >
+                        <div class="card-header">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="true" href="#">Time</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Date</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Show time </h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                    <!--                <button type="button" class="btn btn-success">Add New Customer</button><br><br>-->
+                    <!--                <button type="button" class="btn btn-success">View All &nbsp;&nbsp;Customer</button>-->
+                </section>
+
+            </section>
+
+            <div class="d-flex gap-3">
+                <!--            table content-->
+                <div class="col-6">
+                    <div class="col-12 bg-light bg-opacity-50 d-flex">
+                        <table class="table caption-top">
+                            <caption>List of users</caption>
+                            <thead>
+                            <tr>
+                                <th scope="col">I_ID</th>
+                                <th scope="col">Itemn Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Price</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">I001</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>25000.00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">I002</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>3000.00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">C003</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>2000.00</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-6 d-flex">
+
+                    <div class="col-12 d-flex gap-3" >
+                        <div class="card w-75 h-85">
+                            <div class="card-body">
+                                <h5 class="card-title">Add New Item</h5>
+
+                                <div class="input-group input-group-sm mb-3">
+                                    <span class="input-group-text" id="Customer-ID">Item Code&nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp; </span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                </div>
+
+                                <div class="input-group input-group-sm mb-3">
+                                    <span class="input-group-text" id="Customer-Name">Item Name&nbsp; &nbsp; </span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                </div>
+
+                                <div class="input-group input-group-sm mb-3">
+                                    <span class="input-group-text" id="Customer-Address">Qty </span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                </div>
+
+                                <div class="input-group input-group-sm mb-3">
+                                    <span class="input-group-text" id="Customer-Contact"> Price</span>
+                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-3 ms-auto my-5">
+                            <button type="button" class="btn btn-light btn-lg"> Save&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-bookmark"></i></button><br><br>
+                            <button type="button" class="btn btn-light btn-lg"> Renew <i class="fa-solid fa-retweet"></i></button><br><br>
+                            <button type="button" class="btn btn-danger btn-lg" >Close &nbsp;&nbsp;&nbsp;<i class="fa-sharp fa-solid fa-circle-xmark"></i></button><br><br>
+                        </div>
+
+                    </div>
+                    <!--                second row start-->
+                    <!--            <section class="row">-->
+                    <!--                <br>-->
+                    <!--                <br>-->
+                    <!--                <br>-->
+                    <!--            </section>-->
+                    <!--                Second row End-->
+
+                </div>
+
+
+            </div>
+
+        </section>
+    </main>
+</section>
+<!--item End-->
+<div style="height: 50px"></div>
+<!--Order-->
+<section id="">
+    <main class="container-fluid" style="background-color: #565e64; height: 65vh;" >
+        <section class="row " id="OrderSection2">
+
+            <!--        income details started-->
+            <section class="col-4" >
+
+
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Income Details</h4>
+                    </div>
+                    <div class="card-body " >
+                        <section class="row">
+                            <!--                    Order Id-->
+                            <div class="col">
+
+                                <div class="mb-2">
+                                    <label for="formGroupExampleInput" class="form-label">Order Id  :</label>
+                                    <input type="text" class="form-control" id="Order-Id" placeholder="Oxxxx">
+                                </div>
+
+                            </div>
+                            <!--                    Order Id End-->
+                            <!--                    Date start-->
+                            <div class="col">
+
+                                <div class="mb-2">
+                                    <label for="formGroupExampleInput" class="form-label">Date  :</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Day/Month/Year">
+                                </div>
+
+                            </div>
+                            <!--                    Date End-->
+
+                        </section>
+                        <section class="row">
+                            <!--                    Customer Id satrt-->
+                            <div class="col">
+
+                                <div class="mb-2">
+                                    <label for="inputState" class="form-label">Customer ID</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <!--                    Customer Id End-->
+
+                            </div>
+                            <div class="col">
+                                <!--                            Customer Name start-->
+                                <div class="mb-2">
+                                    <label for="formGroupExampleInput" class="form-label">Name  :</label>
+                                    <input type="text" class="form-control" id="Name" placeholder="Mr/Mis">
+                                </div>
+                                <!--                            End Name-->
+
+                            </div>
+
+                        </section>
+                        <section class="row" >
+                            <div class="col">
+                                <!--                            contact Number-->
+                                <div class="mb-2">
+                                    <label for="formGroupExampleInput" class="form-label">Contact  :</label>
+                                    <input type="text" class="form-control" id="Contact" placeholder="07X-XXXXXXX">
+                                </div>
+                                <!--                            End Contact Number-->
+
+                            </div>
+                            <div class="col">
+                                <!--                            Address-->
+                                <div class="mb-2">
+                                    <label for="formGroupExampleInput" class="form-label">Address  :</label>
+                                    <input type="text" class="form-control" id="Address" placeholder=" ">
+                                </div>
+                                <!--                            End Address-->
+
+                            </div>
+                        </section>
+
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </section>
+            <!--        income details End-->
+
+            <!--        item select start-->
+            <section class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Select Item</h4>
+                    </div>
+                    <div class="card-body " >
+                        <section class="row">
+                            <!--                    Item Code-->
+                            <div class="col">
+
+                                <div class="mb-2">
+                                    <label for="formGroupExampleInput" class="form-label">Order Id  :</label>
+
+                                    <select id="Item-Code" class="form-select">-->
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <!--                    Order Id End-->
+                            <!--                    Description start-->
+                            <div class="col">
+
+                                <div class="mb-2">
+                                    <label for="formGroupExampleInput" class="form-label">Description  :</label>
+                                    <input type="text" class="form-control" id="Description" placeholder="   ">
+                                </div>
+
+                            </div>
+                            <!--                    Description End-->
+
+                        </section>
+                        <section class="row">
+                            <!--                    Unit Price satrt-->
+                            <div class="col">
+
+                                <div class="mb-2">
+                                    <label for="inputState" class="form-label">Unit Price</label>
+                                    <input type="text" class="form-control" id="Unit-Price" placeholder="  ">
+                                    <!--                                    <select id="inputState" class="form-select">-->
+                                    <!--                                        <option selected>Choose...</option>-->
+                                    <!--                                        <option>...</option>-->
+                                    <!--                                    </select>-->
+                                </div>
+                                <!--                    Unit Price End-->
+
+                            </div>
+                            <div class="col">
+                                <!--                             Qty on hand start-->
+                                <div class="mb-2">
+                                    <label for="formGroupExampleInput" class="form-label">Name  :</label>
+                                    <input type="text" class="form-control" id="Qty-on-hand" placeholder="  ">
+                                </div>
+                                <!--                            End -->
+
+                            </div>
+
+                        </section>
+                        <section class="row" >
+
+                            <!--                            Order QTY-->
+                            <div class="mb-2">
+                                <label for="formGroupExampleInput" class="form-label">Order QTY  :</label>
+                                <input type="text" class="form-control" id="qty" placeholder=" ">
+                            </div>
+                            <!--                            End Address-->
+                        </section>
+
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </section>
+            <!--        item select end-->
+
+            <!--        bil start-->
+            <section class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                        Printed bil
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </section>
+            <!--        bill End-->
+
+        </section>
+
+        <!--    ROW 2 start-->
+        <section class="row " >
+
+            <div class="col-10 bg-light bg-opacity-50 d-flex" id="OrderDivIntable">
+                <table class="table caption-top">
+                    <caption>List of users</caption>
+                    <thead>
+                    <tr>
+                        <th scope="col">I_ID</th>
+                        <th scope="col">Itemn Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">I001</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>25000.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I002</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>3000.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">C003</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>2000.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+
+        </section>
+    </main>
+</section>
+<!--Order End-->
+
+
+<script src="Assets/js/bootstrap.js"></script>
+<script src="Assets/JQ/jquery-3.6.1.min.js"></script>
+
+
+<script>
+
+    $("#CustomerPage").on('click',function () {
+
+        $("#DashboardSection").css('display','none');
+
+
+    });
+
+
+
+
+</script>
+
+</body>
+</html>

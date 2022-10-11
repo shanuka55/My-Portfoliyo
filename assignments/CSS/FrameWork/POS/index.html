@@ -25,19 +25,19 @@
         .navbar>div>div>form>button{
             margin-left: 15px;
         }
-        main>section {
+        #dashboardSection1{
             background-color: #565e64;
         }
-        main>section>h2{
+        #dashboardH2{
             font-size: 35px;
 
         }
-        main>section>div{
+        #dashboardMain>section>div{
             position: relative;
             left: 200px;
             bottom: 10px;
         }
-        main>section>div>div>h2{
+        #dashboardMain>section>div>div>h2{
             position: relative;
             left: 450px;
             font-size: 45px;
@@ -62,13 +62,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">ORDERS </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"> ITEMS </a>
+                    <a class="nav-link active" aria-current="page" href="pages/Items.html"> ITEMS </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pages/Customer.html"> CUSTOMER </a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -93,9 +96,9 @@
     </div>
 </nav>
 
-<main class="container-fluid">
-    <section class=" p-3">
-        <h2>DashBoard</h2>
+<main class="container-fluid" id="dashboardMain">
+    <section class=" p-3" id="dashboardSection1">
+        <h2 id="dashboardH2">DashBoard</h2>
 
 <!--        Total Customers,items,orders start-->
         <br>

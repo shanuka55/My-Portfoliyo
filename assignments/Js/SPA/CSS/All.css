@@ -1,0 +1,76 @@
+.navbar>div>a{
+    color: #4f5050;
+}
+.navbar>div>a{
+    margin-left: 40px;
+}
+.navbar>div>div{
+    position: absolute;
+    margin-left: 900px;
+}
+.navbar>div>div>form>button{
+    margin-left: 15px;
+}
+main>section {
+    background-color: #565e64;
+}
+main>section>h2{
+    font-size: 35px;
+
+}
+main>section>div{
+    position: relative;
+    left: 200px;
+    bottom: 10px;
+}
+main>section>div>div>h2{
+    position: relative;
+    left: 450px;
+    font-size: 45px;
+}
+/*Dashboard css*/
+#dashboardSection1{
+    background-color: #565e64;
+}
+#dashboardH2{
+    font-size: 35px;
+
+}
+#dashboardMain>section>div{
+    position: relative;
+    left: 200px;
+    bottom: 10px;
+}
+#dashboardMain>section>div>div>h2{
+    position: relative;
+    left: 450px;
+    font-size: 45px;
+}
+
+/*Customer css*/
+
+#section2{
+    height: 250px;
+}
+#section1{
+    background-color: #565e64;
+}
+#CustomerSection>main>section>div {
+    position: relative;
+    left: 2px;
+    bottom: 10px;
+}
+#ItemSection>main>section>div {
+    position: relative;
+    left: 2px;
+    bottom: -25px;
+}
+#OrderSection2{
+    position: relative;
+    top: 10px;
+}
+#OrderDivIntable{
+    margin-top: 57px;
+    margin-left: -181px;
+
+}
