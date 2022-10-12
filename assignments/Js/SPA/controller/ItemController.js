@@ -1,6 +1,6 @@
 
 
-var item=[];
+var items=[];
 
 
 $("#ItemBtn").on('click',function () {
@@ -14,17 +14,17 @@ $(window).on('keydown',function (event) {
     }
 });
 
-$("saveItemBtn").on("click",function () {
+$("#saveItemBtn").on("click",function () {
 
     saveItem();
 });
 
 function saveItem() {
 
-    let ItemCode = $("ItemCodeField").val();
-    let ItemName = $("ItemNameField").val();
-    let ItemQty = $("ItemQtyField").val();
-    let ItemPrice = $("ItemPriceField").val();
+    let ItemCode = $("#txtItemCode").val();
+    let ItemName = $("#txtItemName").val();
+    let ItemQty = $("#txtItemQty").val();
+    let ItemPrice = $("#txtItemPrice").val();
 
     var Item = {
         Code : ItemCode,
@@ -33,6 +33,17 @@ function saveItem() {
         Price : ItemPrice
     }
 
-    item.push(Item);
+    items.push(Item);
+
+    loadAllItem();
+}
+function loadAllItem() {
+
+    $("#TblItem").empty();
+    for (var item of items){
+        var row = `<tr><td>${item.Code}</td><td>${item.Name}</td><td>${item.Qty}</td><td>${item.Price}</td></tr>`
+        $("#TblItem").append(row);
+    }
+
 }
 

@@ -178,11 +178,11 @@
                             <caption>List of customers</caption>
                             <thead>
                             <tr>
-                                <th scope="col">CID</th>
-                                <th scope="col">Customer Name</th>
-                                <th scope="col">Age</th>
-                                <th scope="col">TP</th>
-                                <th scope="col">Salary</th>
+                                <th scope="col">C_ID</th>
+                                <th scope="col">Customer_Name</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Contact</th>
+<!--                                <th scope="col">Salary</th>-->
                             </tr>
                             </thead>
                             <tbody id="TblCustomerBody">
@@ -321,38 +321,17 @@
                 <div class="col-6">
                     <div class="col-12 bg-light bg-opacity-50 d-flex">
                         <table class="table caption-top">
-                            <caption>List of users</caption>
+                            <caption>Item Table</caption>
                             <thead>
                             <tr>
-                                <th scope="col">I_ID</th>
-                                <th scope="col">Itemn Name</th>
-                                <th scope="col">Price</th>
+                                <th scope="col">Item_ID</th>
+                                <th scope="col">Item Name</th>
                                 <th scope="col">Quantity</th>
                                 <th scope="col">Price</th>
                             </tr>
                             </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">I001</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>25000.00</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">I002</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>3000.00</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">C003</th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>2000.00</td>
-                            </tr>
+                            <tbody id="TblItem">
+
                             </tbody>
                         </table>
                     </div>
@@ -367,22 +346,22 @@
 
                                 <div class="input-group input-group-sm mb-3">
                                     <span class="input-group-text" id="ItemCode">Item Code&nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp; </span>
-                                    <input id="ItemCodeField" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    <input id="txtItemCode" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                                 </div>
 
                                 <div class="input-group input-group-sm mb-3">
                                     <span class="input-group-text" id="Item-Name">Item Name&nbsp; &nbsp; </span>
-                                    <input id="ItemNameField" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    <input id="txtItemName" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                                 </div>
 
                                 <div class="input-group input-group-sm mb-3">
                                     <span class="input-group-text" id="Item-Qty">Qty </span>
-                                    <input id="ItemQtyField" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    <input id="txtItemQty" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                                 </div>
 
                                 <div class="input-group input-group-sm mb-3">
                                     <span class="input-group-text" id="Item-Price"> Price</span>
-                                    <input id="ItemPriceField" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                    <input id="txtItemPrice" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                                 </div>
 
                             </div>
