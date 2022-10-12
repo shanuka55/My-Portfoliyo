@@ -32,5 +32,10 @@ function saveCustomer() {
 
     customer.push(Customer);
 
+    loadAllCustomer();
+
+}
+
+function loadAllCustomer() {
 
 }
