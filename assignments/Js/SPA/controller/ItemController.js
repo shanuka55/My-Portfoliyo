@@ -85,9 +85,6 @@ $("#UpdateItemBtn").on('click',function () {
         }
     })
 
-
-
-
 })
 
 /*set all values in to the text fields in the table*/
@@ -107,7 +104,7 @@ function bindRowDetails() {
 /*Search Item*/
 function searchItem(iCode) {
     for (let item of items) {
-        if (item.id === iCode) {
+        if (item.Code === iCode) {
             return item
         }
     }
@@ -118,10 +115,10 @@ function updateItem (iCode) {
     let item = searchItem(iCode);
 
     if (item != null) {
-        item.code = $("#txtItemCode").val();
-        item.name = $("#txtItemName").val();
-        item.qty = $("#txtItemQty").val();
-        item.price = $("#txtItemPrice").val();
+        item.Code = $("#txtItemCode").val();
+        item.Name = $("#txtItemName").val();
+        item.Qty = $("#txtItemQty").val();
+        item.Price = $("#txtItemPrice").val();
         loadAllItem();
         return true;
     } else {
