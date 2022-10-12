@@ -80,9 +80,6 @@ $("#UpdateCustomerBtn").on('click',function () {
             )
         }
     })
-
-
-
 })
 
 function bindRowDetails() {
@@ -141,3 +138,47 @@ $("#ClearCustomerBtn").on('click',function () {
 
 
 });
+
+$("#btnCustomerDelete").on('click',function () {
+
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to Delete this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, Delete it!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+
+            let customerId = $("#customerIdField").val();
+            deleteCustomer(customerId);
+
+
+            Swal.fire(
+                'Deleted!',
+                'Your customer has been Deleted.',
+                'success'
+            )
+        }
+    })
+
+    $("#customerIdField").val('');
+    $("#customerNameField").val('');
+    $("#customerAddressField").val('');
+    $("#customerContactField").val('');
+
+});
+
+function deleteCustomer(customerId) {
+    let customer = searchCustomer(customerId);
+    if (customer != null) {
+        let indexNumber = customers.indexOf(customer);
+        customers.splice(indexNumber, 1);
+        loadAllCustomer();
+        return true;
+    } else {
+        return false;
+    }
+}

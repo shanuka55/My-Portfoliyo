@@ -47,7 +47,7 @@ function saveItem() {
 
     loadAllItem();
 
-    bindRowDetails();
+    bindRowItemsDetails();
 }
 function loadAllItem() {
 
@@ -88,7 +88,7 @@ $("#UpdateItemBtn").on('click',function () {
 })
 
 /*set all values in to the text fields in the table*/
-function bindRowDetails() {
+function bindRowItemsDetails() {
     $('#TblItem>tr').click(function () {
         let code = $(this).children(":eq(0)").text();
         let name = $(this).children(":eq(1)").text();
