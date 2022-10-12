@@ -129,6 +129,12 @@ function updateItem (iCode) {
 /*Clear Add customer Fields...*/
 $("#ClearItemBtn").on('click',function () {
 
+    clearfield();
+
+});
+
+/*Clear text field method*/
+function clearfield(){
     $("#txtItemCode").val('');
     $("#txtItemName").val('');
     $("#txtItemQty").val('');
@@ -141,7 +147,56 @@ $("#ClearItemBtn").on('click',function () {
         showConfirmButton: false,
         timer: 1500
     })
+}
 
 
-});
 
+
+/*Delete Items*/
+$("#btnItemDelete").on('click',function () {
+
+
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to update this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, update it!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+
+            let itemCode = $("#txtItemCode").val();
+            deleteItem(itemCode);
+
+
+            Swal.fire(
+                'Updated!',
+                'Your file has been updated.',
+                'success'
+            )
+        }
+    })
+
+
+    $("#txtItemCode").val('');
+    $("#txtItemName").val('');
+    $("#txtItemQty").val('');
+    $("#txtItemPrice").val('');
+
+})
+
+
+function deleteItem(itemCode) {
+    let item = searchItem(itemCode);
+    alert(item)
+    if (item != null) {
+        let indexNumber = items.indexOf(item);
+        items.splice(indexNumber, 1);
+        loadAllItem();
+        return true;
+    } else {
+        return false;
+    }
+}
