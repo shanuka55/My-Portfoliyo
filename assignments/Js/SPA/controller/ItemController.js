@@ -26,6 +26,7 @@ function saveItem() {
     let ItemQty = $("#txtItemQty").val();
     let ItemPrice = $("#txtItemPrice").val();
 
+    //object
     var Item = {
         Code : ItemCode,
         Name : ItemName,
