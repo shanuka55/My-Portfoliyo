@@ -1,5 +1,5 @@
 
-var customer=[];
+var customers=[];
 
 $("#CustomerBtn").on('click',function () {
     $("#SearchFieldID").focus();
@@ -30,12 +30,18 @@ function saveCustomer() {
         contact: customerContact
     }
 
-    customer.push(Customer);
+    customers.push(Customer);
 
     loadAllCustomer();
 
 }
 
 function loadAllCustomer() {
+
+    $("#TblCustomerBody").empty();
+    for (var customer of customers){
+        var row = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.contact}</td></tr>`
+        $("#TblCustomerBody").append(row);
+    }
 
 }
