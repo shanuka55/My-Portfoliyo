@@ -46,6 +46,8 @@ function saveItem() {
     items.push(Item);
 
     loadAllItem();
+
+    bindRowDetails();
 }
 function loadAllItem() {
 
@@ -56,4 +58,93 @@ function loadAllItem() {
     }
 
 }
+
+/*Update btn click*/
+$("#UpdateItemBtn").on('click',function () {
+
+
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to update this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, update it!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+
+            let itemCode = $("#txtItemCode").val();
+            updateItem(itemCode);
+
+            Swal.fire(
+                'Updated!',
+                'Your file has been updated.',
+                'success'
+            )
+        }
+    })
+
+
+
+
+})
+
+/*set all values in to the text fields in the table*/
+function bindRowDetails() {
+    $('#TblItem>tr').click(function () {
+        let code = $(this).children(":eq(0)").text();
+        let name = $(this).children(":eq(1)").text();
+        let qty = $(this).children(":eq(2)").text();
+        let price = $(this).children(":eq(3)").text();
+        console.log(code+" "+name+" "+qty+" "+price);
+        $("#txtItemCode").val(code);
+        $("#txtItemName").val(name);
+        $("#txtItemQty").val(qty);
+        $("#txtItemPrice").val(price);
+    });
+}
+/*Search Item*/
+function searchItem(iCode) {
+    for (let item of items) {
+        if (item.id === iCode) {
+            return item
+        }
+    }
+    return null;
+}
+
+function updateItem (iCode) {
+    let item = searchItem(iCode);
+
+    if (item != null) {
+        item.code = $("#txtItemCode").val();
+        item.name = $("#txtItemName").val();
+        item.qty = $("#txtItemQty").val();
+        item.price = $("#txtItemPrice").val();
+        loadAllItem();
+        return true;
+    } else {
+        return false;
+    }
+}
+
+/*Clear Add customer Fields...*/
+$("#ClearItemBtn").on('click',function () {
+
+    $("#txtItemCode").val('');
+    $("#txtItemName").val('');
+    $("#txtItemQty").val('');
+    $("#txtItemPrice").val('');
+
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: ' Clear',
+        showConfirmButton: false,
+        timer: 1500
+    })
+
+
+});
 
