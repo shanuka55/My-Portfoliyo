@@ -17,6 +17,15 @@ $(window).on('keydown',function (event) {
 $("#saveItemBtn").on("click",function () {
 
     saveItem();
+
+    /*Notification*/
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Item has been saved',
+        showConfirmButton: false,
+        timer: 1500
+    })
 });
 
 function saveItem() {
