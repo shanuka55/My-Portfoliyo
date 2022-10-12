@@ -79,7 +79,7 @@ $("#UpdateItemBtn").on('click',function () {
 
             Swal.fire(
                 'Updated!',
-                'Your file has been updated.',
+                'Your item has been updated.',
                 'success'
             )
         }
@@ -158,12 +158,12 @@ $("#btnItemDelete").on('click',function () {
 
     Swal.fire({
         title: 'Are you sure?',
-        text: "You won't be able to update this!",
+        text: "You won't be able to Delete this!",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, update it!'
+        confirmButtonText: 'Yes, Delete it!'
     }).then((result) => {
         if (result.isConfirmed) {
 
@@ -172,8 +172,8 @@ $("#btnItemDelete").on('click',function () {
 
 
             Swal.fire(
-                'Updated!',
-                'Your file has been updated.',
+                'Deleted!',
+                'Your item has been Deleted.',
                 'success'
             )
         }
