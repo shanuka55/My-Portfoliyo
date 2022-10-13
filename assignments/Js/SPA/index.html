@@ -31,17 +31,24 @@
 <!--                        <a class="nav-link active" aria-current="page" >HOME</a>-->
                     </li>
                     <li class="nav-item">
+                        <button class="btn btn-outline-success" type="submit" id="CustomerBtn">CUSTOMER</button>&nbsp;
+                        <!--                        <a class="nav-link active" aria-current="page" id="CustomerPage"> CUSTOMER </a>-->
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-success" type="submit" id="ItemBtn">ITEMS</button>&nbsp;
+                        <!--                        <a class="nav-link active" aria-current="page" id="ItemPage"> ITEMS </a>-->
+                    </li>
+                    <li class="nav-item">
                         <button class="btn btn-outline-success" type="submit" id="OrderBtn">ORDERS</button>&nbsp;
 <!--                        <a class="nav-link active" aria-current="page" id="OrdersPage">ORDERS </a>-->
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-outline-success" type="submit" id="ItemBtn">ITEMS</button>&nbsp;
-<!--                        <a class="nav-link active" aria-current="page" id="ItemPage"> ITEMS </a>-->
+                        <button class="btn btn-outline-success" type="submit" id="OrderDetailsBtn">ORDER Details</button>&nbsp;
+                        <!--                        <a class="nav-link active" aria-current="page" id="OrdersPage">ORDERS </a>-->
                     </li>
-                    <li class="nav-item">
-                        <button class="btn btn-outline-success" type="submit" id="CustomerBtn">CUSTOMER</button>&nbsp;
-<!--                        <a class="nav-link active" aria-current="page" id="CustomerPage"> CUSTOMER </a>-->
-                    </li>
+
+
+
                     <!--<li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             OTHERS
@@ -607,6 +614,36 @@
 </section>
             <!--Order End-->
 
+            <!--Order Details-->
+<section id="OrderDetailsSection">
+   <section style="background-color:#565e64; height: 90vh;">
+       <section class="row " >
+
+           <div class="col-2"></div>
+           <div class="col-10 bg-light bg-opacity-50 d-flex" id="OrderDivIntable">
+               <table class="table caption-top">
+                   <caption>All ORDERS</caption>
+                   <thead>
+                   <tr>
+                       <th scope="col">I_Code</th>
+                       <th scope="col">Item Name</th>
+                       <th scope="col">Unit Price</th>
+                       <th scope="col">Quantity</th>
+                       <th scope="col">Total</th>
+                   </tr>
+                   </thead>
+                   <tbody id="tblOrderDeatails">
+
+                   </tbody>
+               </table>
+           </div>
+       </section>
+       <div class="row col-2 m-sm-auto" >
+           <button type="button" class="btn btn-info shadow" style="margin-top: 210px" id="btnClearTable">Clear Table</button>
+       </div>
+   </section>
+</section>
+            <!--Order Details end-->
 
 <script src="Assets/js/bootstrap.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

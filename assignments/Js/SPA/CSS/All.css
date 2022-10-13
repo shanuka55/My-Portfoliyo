@@ -83,3 +83,8 @@ main>section>div>div>h2{
 #OrderSection{
     display: none;
 }
+
+#OrderDetailsSection{
+    display: none;
+
+}
