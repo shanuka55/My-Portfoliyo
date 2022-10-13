@@ -23,7 +23,18 @@ $(window).on('keydown',function (event) {
 function loadToItemBox(){
 
 }
+function loadAllCustomerIds(){
+    $("#inputCmbCustomerId").empty();
+    $("#inputCmbCustomerId").append(`<option></option>`);
+    for (let cus of customers){
+        $("#inputCmbCustomerId").append(`<option class="text-dark">${cus.id}</option>`);
+    }
+}
 
+$("#inputCmbCustomerId").click(function () {
+
+    loadAllCustomerIds();
+})
 
 
 
