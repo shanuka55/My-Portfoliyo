@@ -156,19 +156,35 @@ function getTotal() {
 
 var orderDetails=[];
 
+
+                /*place Order btn*/
 $("#btnPlaceOrder").on('click',function () {
 
+    var OrderId = genarateOrderId();
+    var Date = getDate();
+
+    /*alert("hello");*/
     var orderDetail = {
-        OrderId: genarateOrderId(),
+        OrderId: OrderId,
         CustomerId: cId,
         Total: orderTotal,
-        Date: getDate()
+        Date: Date
     }
 
     orderDetails.push(orderDetail);
 
+    alert(orderDetail);
+
     loadOrderDetailstable();
 });
+
+function getDate() {
+
+    const date = new Date().toLocaleDateString("de-DE");
+    console.log(date);
+    return date;
+
+}
 
 function genarateOrderId() {
 
@@ -209,7 +225,7 @@ function loadOrderDetailstable() {
 
     $("#tblOrderDeatails").empty();
     for (var orderDetail of orderDetails){
-        alert(orderDetail.OrderId+''+orderDetail.Total+""+orderDetail.Date);
+        /*alert(orderDetail.OrderId+''+orderDetail.Total+""+orderDetail.Date);*/
         var row = `<tr><td>${orderDetail.OrderId}</td><td>${orderDetail.CustomerId}</td><td>${orderDetail.Total}</td><td>${orderDetail.Date}</td></tr>`
         $("#tblOrderDetails").append(row);
     }
@@ -217,7 +233,6 @@ function loadOrderDetailstable() {
 }
 
 $("#OrderDetailsBtn").on('click',function () {
-
 
 
     loadOrderDetailstable();
