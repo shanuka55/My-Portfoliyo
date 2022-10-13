@@ -176,6 +176,8 @@ $("#btnPlaceOrder").on('click',function () {
     alert(orderDetail);
 
     loadOrderDetailstable();
+
+    Swal.fire('Your Order has been save Successfully.');
 });
 
 function getDate() {
