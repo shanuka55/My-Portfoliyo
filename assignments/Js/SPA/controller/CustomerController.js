@@ -1,3 +1,10 @@
+const cIdRegx = /^(C00-)[0-9]{1,3}$/;
+const cNameRegx = /^[A-z ]{5,20}$/;
+const cAddressRegx = /^[0-9/A-z .,]{7,}$/;
+const cContactRegx = /^(070|071|072|075|076|077|078|027)[0-9]{7}$/;
+
+var customerValidation=[];
+
 
 var customers=[];
 
@@ -182,3 +189,4 @@ function deleteCustomer(customerId) {
         return false;
     }
 }
+

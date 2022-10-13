@@ -7,6 +7,15 @@ $("#CustomerBtn").on('click',function () {
 
     $("#CustomerSection").css('display','inline');
 
+
+
+
+    var time = timer();
+
+    $("#Time").text(time);
+
+
+
 });
 
 $("#ItemBtn").on('click',function () {
@@ -17,6 +26,10 @@ $("#ItemBtn").on('click',function () {
     $("#OrderDetailsSection").css('display','none');
 
     $("#ItemSection").css('display','inline');
+
+    var time = timer();
+
+    $("#Time2").text(time);
 
 });
 
@@ -53,4 +66,27 @@ $("#OrderDetailsBtn").on('click',function () {
 
 
 });
+
+function timer(){
+
+
+    var currentTime = new Date()
+    var hours = currentTime.getHours()
+    var minutes = currentTime.getMinutes()
+    var sec = currentTime.getSeconds()
+
+    var time = hours+":"+minutes+":"+sec;
+
+    if(hours > 11){
+        time += "PM";
+    } else {
+        time += "AM";
+    }
+
+
+
+    return time;
+}
+
+
 
