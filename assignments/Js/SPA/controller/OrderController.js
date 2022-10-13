@@ -171,7 +171,22 @@ $("#btnPlaceOrder").on('click',function () {
 
 function genarateOrderId() {
 
+        var ids = 0;
+        var orderId = "Or-00";
+        if (orderDetails.length==0){
 
+            ids=ids+1
+            return orderId+ids;
+        }
+        else {
+            var detail = orderDetails[orderDetails.length-1]
+            var id = detail.OrderId;
+            var x = id.substr(4,);
+            var intx = parseInt(x);
+            intx = intx+1;
+            var newId = intx;
+            return newId;
+        }
 
 }
 
