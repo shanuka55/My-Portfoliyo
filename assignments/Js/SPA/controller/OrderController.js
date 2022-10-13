@@ -92,6 +92,20 @@ function fillItemTextField(Icode) {
 
 }
 
+/*Add new Customer Btn*/
+
+$("#btnAddNewCustomer").on('click',function () {
+
+    $("#DashboardSection").css('display','none');
+    $("#ItemSection").css('display','none');
+    $("#OrderSection").css('display','none');
+
+    $("#CustomerSection").css('display','inline');
+
+});
+
+
+
 
 
 

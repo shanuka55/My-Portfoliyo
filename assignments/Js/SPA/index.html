@@ -404,8 +404,8 @@
 
 
                 <div class="card bg-transparent shadow-lg" >
-                    <div class="card-header " style="background-color: #565e64" >
-                        <h4 style="color:darkgoldenrod; font-size: xx-large;">Income Details</h4>
+                    <div class="card-header shadow" style="background-color: #565e64" >
+                        <h4 style="color:darkgoldenrod; font-size: xx-large;">CUSTOMER DETAILS&nbsp;&nbsp;&nbsp; <i class="fa-sharp fa-solid fa-file-circle-info"></i></h4>
                     </div>
                     <div class="card-body " >
                         <section class="row">
@@ -477,7 +477,8 @@
                             </div>
                         </section>
 
-                        <a href="#" class="btn btn-primary">Done</a>
+                        <br>
+                        <button type="button" class="btn btn-secondary shadow" id="btnAddNewCustomer">Add new Customer &nbsp; <i class="fa-solid fa-user-plus"></i></button>
                     </div>
                 </div>
             </section>
@@ -485,9 +486,9 @@
 
             <!--        item select start-->
             <section class="col-4">
-                <div class="card bg-transparent shadow-lg">
-                    <div class="card-header">
-                        <h4 style="color:olivedrab; font-size: xx-large;">Select Item</h4>
+                <div class="card bg-transparent shadow ">
+                    <div class="card-header bg-dark bg-transparent shadow">
+                        <h4 style="color:#052a3e; font-size: xx-large; " >ITEMS DETAILS &nbsp;&nbsp;&nbsp; <i class="fa-solid fa-circle-info"></i></h4>
                     </div>
                     <div class="card-body " >
                         <section class="row">
@@ -495,7 +496,7 @@
                             <div class="col">
 
                                 <div class="mb-2">
-                                    <label for="inputCmbItemCode" class="form-label">Order Id  :</label>
+                                    <label for="inputCmbItemCode" class="form-label">Item Code  :</label>
 
                                     <select id="inputCmbItemCode" class="form-select">
                                         <option selected>Choose...</option>
@@ -504,7 +505,7 @@
                                 </div>
 
                             </div>
-                            <!--                    Order Id End-->
+                            <!--                    Item Code End-->
                             <!--                    Qty On Hand start-->
                             <div class="col">
 
@@ -553,7 +554,8 @@
                             <!--                            End Address-->
                         </section>
 
-                        <a href="#" class="btn btn-primary">Done</a>
+                        <br>
+                        <button type="button" class="btn btn-warning shadow" id="btnAddToCart">Add To Cart &nbsp;<i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
             </section>
