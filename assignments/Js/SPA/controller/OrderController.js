@@ -105,6 +105,12 @@ $("#btnAddNewCustomer").on('click',function () {
 });
 
 
+/*Add to cart Btn*/
+$("#btnAddToCart").on('click',function () {
+
+
+
+})
 
 
 
