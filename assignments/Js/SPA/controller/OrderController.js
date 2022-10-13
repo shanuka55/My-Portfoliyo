@@ -167,9 +167,7 @@ $("#btnPlaceOrder").on('click',function () {
 
     orderDetails.push(orderDetail);
 
-
-
-
+    loadOrderDetailstable();
 });
 
 function genarateOrderId() {
@@ -206,6 +204,25 @@ function calculateTotal() {
     orderTotal=total;
 
 }
+
+function loadOrderDetailstable() {
+
+    $("#tblOrderDeatails").empty();
+    for (var orderDetail of orderDetails){
+        alert(orderDetail.OrderId+''+orderDetail.Total+""+orderDetail.Date);
+        var row = `<tr><td>${orderDetail.OrderId}</td><td>${orderDetail.CustomerId}</td><td>${orderDetail.Total}</td><td>${orderDetail.Date}</td></tr>`
+        $("#tblOrderDetails").append(row);
+    }
+
+}
+
+$("#OrderDetailsBtn").on('click',function () {
+
+
+
+    loadOrderDetailstable();
+
+})
 
 
 
