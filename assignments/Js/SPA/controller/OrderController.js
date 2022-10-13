@@ -23,6 +23,8 @@ $(window).on('keydown',function (event) {
 function loadToItemBox(){
 
 }
+
+/*load all customer ids in the cmbBox*/
 function loadAllCustomerIds(){
     $("#inputCmbCustomerId").empty();
     $("#inputCmbCustomerId").append(`<option></option>`);
@@ -34,10 +36,23 @@ function loadAllCustomerIds(){
 $("#inputCmbCustomerId").click(function () {
 
     loadAllCustomerIds();
+});
+
+
+/*Load item code in to cmbBox*/
+$("#inputCmbItemCode").click(function () {
+
+    loadAllItemIds();
 })
 
-
-
+function loadAllItemIds() {
+    $("#inputCmbItemCode").empty();
+    $("#inputCmbItemCode").append(`<option></option>`);
+    for (let item of items){
+        /*alert(item.Code);*/
+        $("#inputCmbItemCode").append(`<option class="text-dark">${item.Code}</option>`);
+    }
+}
 
 
 
