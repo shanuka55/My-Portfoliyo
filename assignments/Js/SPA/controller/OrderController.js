@@ -57,9 +57,11 @@ function loadAllItemIds() {
 
 /*Fill customer Details*/
 
+let cId;
+
 $("#inputCmbCustomerId").on('change',function () {
 
-    let cId = $(this).val();
+    cId = $(this).val();
     fillCustomerTextField(cId);
 
 });
@@ -150,6 +152,28 @@ function getTotal() {
    return tot;
 }
 
+var orderDetails=[];
+
+$("#btnPlaceOrder").on('click',function () {
+
+    var orderDetail = {
+        OrderId: genarateOrderId(),
+        CustomerId: cId,
+        Total: orderTotal,
+        Date: getDate()
+    }
+
+    orderDetails.push(orderDetail);
+
+
+
+});
+
+function genarateOrderId() {
+
+
+
+}
 
 
 
