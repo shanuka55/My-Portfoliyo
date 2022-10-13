@@ -74,6 +74,25 @@ function fillCustomerTextField(cId) {
 }
 
 
+/*Fill items Details*/
+
+$("#inputCmbItemCode").on('change',function () {
+
+    let Icode = $(this).val();
+    fillItemTextField(Icode);
+
+});
+
+function fillItemTextField(Icode) {
+
+    let item = searchCustomer(Icode);
+    $("#txtO").val(item.Name);
+    $("#txtOrderCustomerAddress").val(item.address);
+    $("#txtOrderCustomerContact").val(item.contact);
+
+}
+
+
 
 
 
