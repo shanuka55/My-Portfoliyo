@@ -55,7 +55,23 @@ function loadAllItemIds() {
 }
 
 
+/*Fill customer Details*/
 
+$("#inputCmbCustomerId").on('change',function () {
+
+    let cId = $(this).val();
+    fillCustomerTextField(cId);
+
+});
+
+function fillCustomerTextField(cId) {
+
+    let customer = searchCustomer(cId);
+    $("#txtOrderCustomerName").val(customer.name);
+    $("#txtOrderCustomerAddress").val(customer.address);
+    $("#txtOrderCustomerContact").val(customer.contact);
+
+}
 
 
 
