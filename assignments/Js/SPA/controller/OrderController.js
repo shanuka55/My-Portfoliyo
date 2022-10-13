@@ -85,10 +85,10 @@ $("#inputCmbItemCode").on('change',function () {
 
 function fillItemTextField(Icode) {
 
-    let item = searchCustomer(Icode);
-    $("#txtO").val(item.Name);
-    $("#txtOrderCustomerAddress").val(item.address);
-    $("#txtOrderCustomerContact").val(item.contact);
+    let item = searchItem(Icode);
+    $("#txtOrderItemName").val(item.Name);
+    $("#txtOrderItemQtyOnHand").val(item.Qty);
+    $("#txtOrderItemPrice").val(item.Price);
 
 }
 
