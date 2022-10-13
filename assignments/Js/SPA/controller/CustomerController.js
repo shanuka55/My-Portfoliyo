@@ -5,6 +5,106 @@ const cContactRegx = /^(070|071|072|075|076|077|078|027)[0-9]{7}$/;
 
 var customerValidation=[];
 
+customerValidation.push(
+    {reg: cIdRegx, field: $("#customerIdField"), error: 'Customer ID(Ex : C00-001)'}
+);
+customerValidation.push(
+    {reg: cNameRegx, field: $("#customerNameField"), error: 'Customer Name(Ex : A-z, 5-20)'}
+);
+customerValidation.push(
+    {reg: cAddressRegx, field: $("#customerAddressField"), error: 'Customer Address(Ex : A-z 0-9)'}
+);
+customerValidation.push(
+    {reg: cAddressRegx, field: $("#customerContactField"), error: 'Customer Contact(Ex : 07X XXX XX XX)'}
+);
+
+function checkValidations (){
+    let x = 0;
+    for (let val of customerValidation) {
+        if (check(val.reg, val.field)) {
+            textSuccess(val.field, "");
+        } else {
+            x = x + 1;
+            setErrorMessage(val.field,val.error);
+        }
+    }
+    setButtonValue(x);
+}
+
+function setButtonValue(val) {
+    if (val>0) {
+        $("#saveCustomerBtn").attr('disabled',true)
+    } else {
+        $("#saveCustomerBtn").attr('disabled',false)
+    }
+}
+
+function check(reg, field) {
+    let val = field.val();
+    return reg.test(val) ? true : false
+}
+
+function setErrorMessage (field, error) {
+    if (field.val().length <= 0) {
+        field.css("border", "1px solid #ced4da")
+        field.parent().children('span').text(error);
+    } else {
+        field.css("border", "2px solid red")
+        field.parent().children('span').text(error);
+    }
+}
+
+function textSuccess(txtField, error) {
+    if (txtField.val().length <= 0) {
+        txtField.css("border", "1px solid #ced4da")
+        txtField.parent().children('span').text(error);
+    } else {
+        txtField.css("border", "2px solid green")
+        txtField.parent().children('span').text(error);
+    }
+}
+
+function txtFieldFocus (textField) {
+    textField.focus();
+}
+
+$("#customerIdField,#customerNameField,#customerAddressField,#customerContactField").on('keyup', function (event) {
+    checkValidations();
+})
+
+$("#customerIdField,#customerNameField,#customerAddressField,#customerContactField").on('blur', function (event) {
+    checkValidations();
+})
+
+$("#customerIdField").on('keydown', function (event) {
+    if (event.key == 'Enter' && check(cIdRegx, $("#customerIdField"))) {
+        $("#customerNameField").focus();
+    } else {
+        txtFieldFocus($("#customerIdField"));
+    }
+});
+
+$("#customerNameField").on('keydown', function (event) {
+    if (event.key == 'Enter' && check(cNameRegx, $("#customerNameField"))) {
+        txtFieldFocus($("#customerAddressField"));
+    }
+});
+
+$("#customerAddressField").on('keydown', function (event) {
+    if (event.key == 'Enter' && check(cAddressRegx, $("#customerAddressField"))) {
+        txtFieldFocus($("#customerContactField"));
+    }
+});
+
+$("#customerContactField").on('keydown', function (event) {
+    if (event.key == 'Enter' && check(cContactRegx, $("#customerContactField"))) {
+        $("#saveCustomerBtn").click();
+        $("#customerIdField,#customerNameField,#customerAddressField,#customerContactField").val("");
+        $("#customerIdField").focus();
+        checkValidations();
+    }
+});
+
 
 var customers=[];
 
@@ -159,10 +259,6 @@ $("#btnCustomerDelete").on('click',function () {
     }).then((result) => {
         if (result.isConfirmed) {
 
-            let customerId = $("#customerIdField").val();
-            deleteCustomer(customerId);
-
-
             Swal.fire(
                 'Deleted!',
                 'Your customer has been Deleted.',
@@ -170,6 +266,9 @@ $("#btnCustomerDelete").on('click',function () {
             )
         }
     })
+    let customerId = $("#customerIdField").val();
+    deleteCustomer(customerId);
+
 
     $("#customerIdField").val('');
     $("#customerNameField").val('');
