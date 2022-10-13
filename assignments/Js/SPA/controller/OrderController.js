@@ -72,13 +72,13 @@ function fillCustomerTextField(cId) {
     $("#txtOrderCustomerContact").val(customer.contact);
 
 }
-
+let Icode;
 
 /*Fill items Details*/
 
 $("#inputCmbItemCode").on('change',function () {
 
-    let Icode = $(this).val();
+    Icode= $(this).val();
     fillItemTextField(Icode);
 
 });
@@ -105,12 +105,56 @@ $("#btnAddNewCustomer").on('click',function () {
 });
 
 
+
+var cartDetailsArry=[];
+
 /*Add to cart Btn*/
 $("#btnAddToCart").on('click',function () {
 
 
+    var cart ={
+        Code: Icode,
+        Name: $("#txtOrderItemName").val(),
+        UnitPrice : $("#txtOrderItemPrice").val(),
+        Qty : $("#txtOrderItemQty").val(),
+        Total :getTotal()
+    }
+    cartDetailsArry.push(cart);
+    loadCartDeatails();
 
-})
+});
+
+function loadCartDeatails() {
+
+    $("#tblCart").empty();
+    for (let cart of cartDetailsArry){
+
+        var cartRow = `<tr><td>${cart.Code}</td><td>${cart.Name}</td><td>${cart.UnitPrice}</td><td>${cart.Qty}</td><td>${cart.Total}</td></tr>`
+        $("#tblCart").append(cartRow);
+    }
+
+}
+
+var subTotalArray=[];
+
+function getTotal() {
+
+   var price = $("#txtOrderItemPrice").val();
+
+   var qty = $("#txtOrderItemQty").val();
+
+   var tot = price*qty;
+
+   subTotalArray.push(tot);
+
+   return tot;
+}
+
+
+
+
+
+
 
 
 
