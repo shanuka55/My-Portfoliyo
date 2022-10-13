@@ -124,6 +124,8 @@ $("#btnAddToCart").on('click',function () {
     cartDetailsArry.push(cart);
     loadCartDeatails();
 
+    calculateTotal();
+
 });
 
 function loadCartDeatails() {
@@ -167,6 +169,7 @@ $("#btnPlaceOrder").on('click',function () {
 
 
 
+
 });
 
 function genarateOrderId() {
@@ -178,6 +181,7 @@ function genarateOrderId() {
             ids=ids+1
             return orderId+ids;
         }
+
         else {
             var detail = orderDetails[orderDetails.length-1]
             var id = detail.OrderId;
@@ -189,6 +193,21 @@ function genarateOrderId() {
         }
 
 }
+
+var orderTotal;
+
+function calculateTotal() {
+
+    let total = 0
+    for(var i=0; i<subTotalArray.length; i++){
+
+        total += subTotalArray[i]
+    }
+    orderTotal=total;
+
+}
+
+
 
 
 
