@@ -173,7 +173,7 @@ $("#btnPlaceOrder").on('click',function () {
 
     orderDetails.push(orderDetail);
 
-    alert(orderDetail);
+    /*alert(orderDetail);*/
 
     loadOrderDetailstable();
 
@@ -239,6 +239,11 @@ $("#OrderDetailsBtn").on('click',function () {
 
     loadOrderDetailstable();
 
+})
+
+$("#btnClearTable").on('click',function () {
+
+    $("tblOrderDetails").empty();
 })
 
 
