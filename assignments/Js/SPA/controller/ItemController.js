@@ -57,6 +57,8 @@ function loadAllItem() {
         $("#TblItem").append(row);
     }
 
+    bindRowItemsDetails();
+
 }
 
 /*Update btn click*/

@@ -160,6 +160,8 @@ function loadAllCustomer() {
         $("#TblCustomerBody").append(row);
     }
 
+    bindRowDetails();
+
 }
 
 
