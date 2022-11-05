@@ -3,8 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>Task-01</title>
+    <link rel="stylesheet" href="CSS/Main.css">
+
 </head>
 <body>
 
+<main>
+    <section id="section01">
+        <div id="display"></div>
+        <button id="btnStart">Start</button>
+        <button id="btnEnd">End</button>
+    </section>
+
+    <section id="section02">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+
+<script src="Assets/jquery-3.6.1.min.js"></script>
+<script>
+
+    var colors = ['red','blue','green','yellow','pink','purple'];
+
+
+    var count =0;
+    var color;
+    function ChangeColor() {
+        $('#display').css('background-color',colors[count]);
+        return count;
+        count++;
+        if (count==colors.length){
+            count=0;
+        }
+
+    }
+    $("#btnStart").click(function () {
+        setInterval(ChangeColor,500);
+    });
+
+    function stopColor() {
+        $("#display").css('background-color',colors[count]);
+
+
+    }
+    $('#btnEnd').click(function () {
+        setInterval(stopColor);
+    })
+
+
+    /*setInterval(ChangeColor,500)*/
+
+
+
+
+
+</script>
 </body>
 </html>
