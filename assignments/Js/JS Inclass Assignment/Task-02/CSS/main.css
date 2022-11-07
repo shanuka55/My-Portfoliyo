@@ -31,3 +31,10 @@ body{
     border: 1px solid red;
     display: inline-block;
 }
+
+#inputName{
+    font-size: 25px;
+}
+#cmbId{
+    font-size: large;
+}

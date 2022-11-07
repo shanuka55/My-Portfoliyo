@@ -11,7 +11,7 @@
         <section id="section1">
 
             <h2>Name    :</h2>
-            <input type="text">
+            <input id="inputName" type="text">
 
             <h2>Colour  :</h2>
             <select id="cmbId" name="name"></select>
@@ -19,7 +19,7 @@
         </section>
 
         <section id="section2">
-            <button id="btnId">Done</button>
+            <button id="btnId">Add To Queue</button>
         </section>
 
         <section id="section3">
@@ -42,6 +42,15 @@
 <script>
 
     var colors = ['blue','green','yellow','red','black','orange','pink'];
+    var colours;
+
+    for (let i = 0; i<colors.length; i++ ) {
+        $("#cmbId").append(`<option>${colors[i]}</option>`);
+    }
+
+    $("#cmbId").on('change',function () {
+       colours = $(this).val();
+    });
 
     $("#btnId").click(function () {
 
