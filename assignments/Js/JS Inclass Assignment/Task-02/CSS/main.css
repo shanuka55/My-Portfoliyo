@@ -25,12 +25,13 @@ body{
     left: 500px;
 }
 
-/*#section3>div{*/
-/*    width: 100px;*/
-/*    height: 50px;*/
-/*    border: 1px solid red;*/
-/*    display: inline-block;*/
-/*}*/
+#section3>div{
+    width: 100px;
+    height: 50px;
+    border: 1px solid red;
+    display: inline-block;
+
+}
 
 #inputName{
     font-size: 25px;

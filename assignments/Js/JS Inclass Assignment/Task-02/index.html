@@ -38,7 +38,6 @@
 <script src="Assets/JS/jquery-3.6.1.min.js"></script>
 <script>
 
-    var colors = new colors();
 
     var colors = ['blue','green','yellow','red','black','orange','pink'];
     var colours;
@@ -56,6 +55,41 @@
 
     })
 
+    var Qdeatails = {
+        names : [
+            {name:'Nimal',color :'blue'},
+            {name:'kamal',color :'green'},
+            {name:'Amal',color :'yellow'}
+        ],
+        nextName:function () {
+            var lastValue = this.names.pop();
+            this.names.unshift(lastValue);
+        }
+    }
+
+    function setDiveData() {
+            $("#section3").empty();
+
+        for (let i = 0; i<Qdeatails.names.length ; i++) {
+            $("#section3").append(`<div style="background-color: ${Qdeatails.names[i].color}"><h2>${Qdeatails.names[i].name}</h2></div>`);
+        }
+
+        Qdeatails.nextName();
+    }
+
+
+    setInterval(setDiveData,500);
+
+    $("#btnId").click(function () {
+            var pName = $("#inputName").val();
+            var pColor = $("#cmbId").val();
+
+            var person = {
+                name : pName,color : pColor
+            };
+
+            Qdeatails.names.unshift(person);
+    });
 
 
 
