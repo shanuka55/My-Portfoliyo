@@ -36,24 +36,27 @@
     var color;
     function ChangeColor() {
         $('#display').css('background-color',colors[count]);
-        return count;
         count++;
         if (count==colors.length){
             count=0;
         }
 
     }
+    var stop;
+
     $("#btnStart").click(function () {
-        setInterval(ChangeColor,500);
+        stop=setInterval(ChangeColor,500);
     });
 
+
     function stopColor() {
-        $("#display").css('background-color',colors[count]);
+        clearInterval(stop);
 
 
     }
     $('#btnEnd').click(function () {
-        setInterval(stopColor);
+        stopColor();
+
     })
 
 
