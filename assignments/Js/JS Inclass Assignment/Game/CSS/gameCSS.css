@@ -7,11 +7,12 @@
    color: black;
     text-align: center;
     font-size: 50px;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .display{
     color: white;
     font-size: 25px;
+    text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -61,4 +62,8 @@
     font-size: 25px;
     margin-left: 1em;
     cursor: pointer;
+}
+#reset{
+    width: 100px;
+    height: 50px;
 }

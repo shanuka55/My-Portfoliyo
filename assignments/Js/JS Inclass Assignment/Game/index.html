@@ -41,6 +41,20 @@
 <script src="Assets/jquery-3.6.1.min.js"></script>
 <script>
 
+   window.addEventListener('DOMContentLoaded',() =>{
+       const box = Array.from(document.querySelectorAll('.tile'));
+       const playerDisplay = document.querySelector('.display-player');
+       const resetButton = document.querySelector('#reset');
+       const announcer = document.querySelector('.announcer');
+
+
+       let board = ['','','','','','','','',''];
+       let currentPlayer = 'X';
+       let isGameActive = true;
+
+     resetButton.addEventListener('click',resetBoard);
+   })
+
 </script>
 </body>
 </html>
