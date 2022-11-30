@@ -6,7 +6,7 @@
 .title{
    color: black;
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 10%;
 }
 .display{
@@ -41,4 +41,24 @@
 .playerO {
     color: #498AFB;
 }
+/*.hide{*/
+/*    display: none;*/
+/*}*/
 
+.controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.controls button{
+    color: #67e51a;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 25px;
+    margin-left: 1em;
+    cursor: pointer;
+}
