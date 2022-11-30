@@ -42,9 +42,9 @@
 .playerO {
     color: #498AFB;
 }
-/*.hide{*/
-/*    display: none;*/
-/*}*/
+.hide{
+    display: none;
+}
 
 .controls{
     display: flex;
